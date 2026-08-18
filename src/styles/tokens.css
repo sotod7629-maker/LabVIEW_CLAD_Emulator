@@ -1,0 +1,167 @@
+/*
+ * Design tokens.
+ *
+ * One neutral ramp, one accent, and three semantic hues used sparingly.
+ * Every semantic state is also carried by an icon and a text label, so the
+ * interface never communicates a result through color alone.
+ *
+ * Light is the base definition; dark redefines only what must change, and
+ * honors both an explicit `data-theme` and the OS preference.
+ */
+:root {
+  color-scheme: light dark;
+
+  /* Neutrals */
+  --surface-page: #f6f7f9;
+  --surface-card: #ffffff;
+  --surface-sunken: #eef0f4;
+  --surface-raised: #ffffff;
+  --surface-overlay: rgb(15 23 42 / 45%);
+
+  --border-subtle: #e2e6ec;
+  --border-default: #cfd5df;
+  --border-strong: #9aa4b4;
+
+  --text-primary: #16202e;
+  --text-secondary: #4c5769;
+  --text-muted: #6b7688;
+  --text-inverse: #ffffff;
+
+  /* Accent — a single restrained blue */
+  --accent: #1f4b8f;
+  --accent-hover: #173a70;
+  --accent-soft: #e8eefb;
+  --accent-border: #b9cbe9;
+  --accent-text: #1a3f78;
+
+  /* Semantic */
+  --success: #1a6b45;
+  --success-soft: #e6f3ec;
+  --success-border: #a9d4bd;
+  --danger: #9b2226;
+  --danger-soft: #fbeceb;
+  --danger-border: #eab8b6;
+  --warning: #8a5a12;
+  --warning-soft: #fdf3e2;
+  --warning-border: #e8ce9e;
+  --neutral-soft: #eef0f4;
+
+  --focus-ring: #1f4b8f;
+
+  /* Typography */
+  --font-sans: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  --font-mono: ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, monospace;
+
+  --text-xs: 0.75rem;
+  --text-sm: 0.8125rem;
+  --text-base: 0.9375rem;
+  --text-md: 1rem;
+  --text-lg: 1.125rem;
+  --text-xl: 1.375rem;
+  --text-2xl: 1.75rem;
+  --text-display: clamp(2.25rem, 6vw, 3.25rem);
+
+  /* Spacing — 4px base */
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 0.75rem;
+  --space-4: 1rem;
+  --space-5: 1.5rem;
+  --space-6: 2rem;
+  --space-7: 2.5rem;
+  --space-8: 3.5rem;
+
+  --radius-sm: 4px;
+  --radius-md: 8px;
+  --radius-lg: 12px;
+  --radius-pill: 999px;
+
+  --shadow-sm: 0 1px 2px rgb(15 23 42 / 6%);
+  --shadow-md: 0 2px 8px rgb(15 23 42 / 8%);
+  --shadow-lg: 0 12px 32px rgb(15 23 42 / 14%);
+
+  /* Minimum comfortable touch target */
+  --tap-target: 44px;
+
+  --content-max: 60rem;
+  --transition-fast: 120ms ease;
+  --transition-base: 200ms ease;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme='light']) {
+    --surface-page: #0f151d;
+    --surface-card: #171e28;
+    --surface-sunken: #121922;
+    --surface-raised: #1d2632;
+    --surface-overlay: rgb(3 7 14 / 65%);
+
+    --border-subtle: #253040;
+    --border-default: #33404f;
+    --border-strong: #5a6878;
+
+    --text-primary: #e8ecf2;
+    --text-secondary: #b3bdcb;
+    --text-muted: #8d99a9;
+    --text-inverse: #0f151d;
+
+    --accent: #6a9ce8;
+    --accent-hover: #85b0ef;
+    --accent-soft: #1b2941;
+    --accent-border: #33507d;
+    --accent-text: #a8c6f2;
+
+    --success: #63c295;
+    --success-soft: #14291f;
+    --success-border: #2c5943;
+    --danger: #ef8b86;
+    --danger-soft: #2d1918;
+    --danger-border: #63332f;
+    --warning: #e2b467;
+    --warning-soft: #2b2113;
+    --warning-border: #5c472a;
+    --neutral-soft: #212b37;
+
+    --focus-ring: #85b0ef;
+
+    --shadow-sm: 0 1px 2px rgb(0 0 0 / 40%);
+    --shadow-md: 0 2px 10px rgb(0 0 0 / 45%);
+    --shadow-lg: 0 14px 36px rgb(0 0 0 / 55%);
+  }
+}
+
+[data-theme='dark'] {
+  --surface-page: #0f151d;
+  --surface-card: #171e28;
+  --surface-sunken: #121922;
+  --surface-raised: #1d2632;
+  --surface-overlay: rgb(3 7 14 / 65%);
+
+  --border-subtle: #253040;
+  --border-default: #33404f;
+  --border-strong: #5a6878;
+
+  --text-primary: #e8ecf2;
+  --text-secondary: #b3bdcb;
+  --text-muted: #8d99a9;
+  --text-inverse: #0f151d;
+
+  --accent: #6a9ce8;
+  --accent-hover: #85b0ef;
+  --accent-soft: #1b2941;
+  --accent-border: #33507d;
+  --accent-text: #a8c6f2;
+
+  --success: #63c295;
+  --success-soft: #14291f;
+  --success-border: #2c5943;
+  --danger: #ef8b86;
+  --danger-soft: #2d1918;
+  --danger-border: #63332f;
+  --warning: #e2b467;
+  --warning-soft: #2b2113;
+  --warning-border: #5c472a;
+  --neutral-soft: #212b37;
+
+  --focus-ring: #85b0ef;
+}

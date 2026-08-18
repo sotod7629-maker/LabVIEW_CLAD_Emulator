@@ -1,0 +1,31 @@
+{
+  "name": "labview-clad-emulator",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Plataforma de evaluación CLAD (LabVIEW Core 1 / Core 2) — generador de cuestionarios bilingüe con explicaciones documentales.",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc -b && vite build",
+    "preview": "vite preview",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "typecheck": "tsc -b --noEmit"
+  },
+  "dependencies": {
+    "jspdf": "^4.2.1",
+    "pdfjs-dist": "^4.8.69",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "@types/node": "^26.2.0",
+    "@types/react": "^18.3.12",
+    "@types/react-dom": "^18.3.1",
+    "@vitejs/plugin-react": "^6.0.5",
+    "jsdom": "^25.0.1",
+    "typescript": "^5.6.3",
+    "vite": "^8.2.1",
+    "vitest": "^4.1.10"
+  }
+}
