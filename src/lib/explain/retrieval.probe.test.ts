@@ -64,19 +64,27 @@ describe('retrieval provider against the full bank', () => {
     expect(byStatus.error).toBe(0);
     // Sanity band: retrieval must be useful, but must NOT claim to document
     // everything — the guides genuinely do not cover parts of the CLAD blueprint.
-    expect(byStatus.documented).toBeGreaterThan(bank.questions.length * 0.6);
+    // Retrieval must be useful, but must NOT claim to document everything —
+    // the guides genuinely do not cover parts of the CLAD blueprint.
+    expect(byStatus.documented).toBeGreaterThan(bank.questions.length * 0.7);
     expect(byStatus.documented).toBeLessThan(bank.questions.length);
     expect(byStatus.insufficient).toBeGreaterThan(0);
   }, 60_000);
 
   it('reports insufficient evidence for topics absent from the guides', async () => {
-    // "Formula Node" appears zero times in either participant guide.
-    const formulaNodeQuestions = bank.questions.filter((q) =>
-      /formula node/i.test(q.question),
-    );
-    expect(formulaNodeQuestions.length).toBeGreaterThan(0);
+    // Each of these strings was verified by grep to occur ZERO times in either
+    // participant guide. A question about them must never be paired with a
+    // passage, however plausible that passage looks (§17).
+    const absentTopics =
+      /formula node|trim whitespace|vi template|plantilla de vi|tick count|flat sequence|secuencia plana|notifier|notificador|quotient|cociente/i;
 
-    for (const question of formulaNodeQuestions) {
+    const affected = bank.questions.filter(
+      (q) => absentTopics.test(q.question) || absentTopics.test(q.options[q.correct_answer]),
+    );
+    expect(affected.length).toBeGreaterThanOrEqual(10);
+
+    const leaks: number[] = [];
+    for (const question of affected) {
       const explanation = await provider.explain({
         questionId: question.id,
         question: question.question,
@@ -85,7 +93,33 @@ describe('retrieval provider against the full bank', () => {
         bankSource: question.source,
         language: 'es',
       });
-      expect(explanation.status).toBe('insufficient');
+      if (explanation.status === 'documented') leaks.push(question.id);
     }
+
+    expect(leaks).toEqual([]);
+  }, 30_000);
+
+  it('still documents questions the guides unambiguously define', async () => {
+    // Concepts with a dedicated section in the guides: front panel, block
+    // diagram, controls palette, While Loop, Case Structure, producer/consumer,
+    // spreadsheet file I/O, and loop timing.
+    const wellCovered = [1, 2, 3, 45, 71, 227, 240, 257, 259];
+
+    const undocumented: number[] = [];
+    for (const id of wellCovered) {
+      const question = bank.questions.find((q) => q.id === id);
+      expect(question, `question ${id} missing from bank`).toBeDefined();
+      const explanation = await provider.explain({
+        questionId: question!.id,
+        question: question!.question,
+        correctAnswerText: question!.options[question!.correct_answer],
+        selectedAnswerText: null,
+        bankSource: question!.source,
+        language: 'es',
+      });
+      if (explanation.status !== 'documented') undocumented.push(id);
+    }
+
+    expect(undocumented).toEqual([]);
   }, 30_000);
 });

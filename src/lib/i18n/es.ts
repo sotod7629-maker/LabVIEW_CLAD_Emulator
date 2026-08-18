@@ -1,0 +1,163 @@
+export const es = {
+  'app.title': 'Simulador CLAD',
+  'app.subtitle': 'Práctica de certificación LabVIEW · Core 1 y Core 2',
+  'app.skipToContent': 'Ir al contenido principal',
+
+  'common.language': 'Idioma',
+  'common.spanish': 'Español',
+  'common.english': 'English',
+  'common.cancel': 'Cancelar',
+  'common.close': 'Cerrar',
+  'common.continue': 'Continuar',
+  'common.retry': 'Reintentar',
+  'common.loading': 'Cargando…',
+  'common.of': 'de',
+  'common.page': 'Página',
+  'common.lesson': 'Lección',
+  'common.section': 'Sección',
+  'common.question': 'Pregunta',
+  'common.category': 'Categoría',
+  'common.difficulty': 'Dificultad',
+  'common.all': 'Todas',
+
+  'setup.heading': 'Configura tu cuestionario',
+  'setup.description':
+    'Genera un cuestionario de práctica a partir del banco de preguntas CLAD.',
+  'setup.questionCount': 'Número de preguntas',
+  'setup.questionCountHelp': 'Entre 1 y 100 preguntas.',
+  'setup.categories': 'Temas',
+  'setup.categoriesAll': 'Todos los temas',
+  'setup.categoriesSelected': '{count} temas seleccionados',
+  'setup.advanced': 'Opciones avanzadas',
+  'setup.shuffleQuestions': 'Ordenar las preguntas al azar',
+  'setup.shuffleOptions': 'Ordenar las opciones al azar',
+  'setup.shuffleOptionsHelp':
+    'Recomendado: en el banco original la respuesta correcta siempre es la primera opción.',
+  'setup.mode': 'Modo',
+  'setup.modeExam': 'Examen',
+  'setup.modeExamHelp': 'La corrección se revela al finalizar.',
+  'setup.modePractice': 'Práctica',
+  'setup.modePracticeHelp': 'Muestra si acertaste inmediatamente.',
+  'setup.start': 'Comenzar cuestionario',
+  'setup.available': '{count} preguntas disponibles',
+  'setup.resume': 'Reanudar cuestionario anterior',
+  'setup.resumeDescription':
+    'Tienes un cuestionario sin terminar ({answered} de {total} respondidas).',
+  'setup.resumeDiscard': 'Descartar',
+
+  'setup.translationNotice': 'Sobre el idioma del banco de preguntas',
+  'setup.translationPartial':
+    'El banco original está en español. Hay traducción al inglés para {complete} de {total} preguntas; el resto se mostrará en español.',
+  'setup.translationNone':
+    'El banco original está en español y no hay traducción disponible. Con el idioma en inglés, la interfaz estará en inglés pero las preguntas se mostrarán en español.',
+  'setup.translationMachine':
+    'Las traducciones al inglés fueron generadas automáticamente a partir del español. La evaluación siempre usa el banco original.',
+
+  'quiz.progress': 'Pregunta {current} de {total}',
+  'quiz.progressLabel': 'Avance del cuestionario',
+  'quiz.previous': 'Anterior',
+  'quiz.next': 'Siguiente',
+  'quiz.finish': 'Finalizar',
+  'quiz.review': 'Revisar respuestas',
+  'quiz.answered': 'Respondida',
+  'quiz.unanswered': 'Sin responder',
+  'quiz.current': 'Pregunta actual',
+  'quiz.clearAnswer': 'Quitar respuesta',
+  'quiz.navigator': 'Ir a una pregunta',
+  'quiz.navigatorToggle': 'Mapa de preguntas',
+  'quiz.answeredCount': '{answered} de {total} respondidas',
+  'quiz.optionHint': 'Selecciona una opción',
+  'quiz.translationFallback': 'Esta pregunta se muestra en español (sin traducción disponible).',
+  'quiz.practiceCorrect': 'Correcto',
+  'quiz.practiceIncorrect': 'Incorrecto',
+  'quiz.practiceCorrectAnswer': 'Respuesta correcta:',
+  'quiz.exit': 'Salir del cuestionario',
+  'quiz.exitConfirm': '¿Salir del cuestionario? Se perderá el progreso actual.',
+
+  'confirm.title': 'Finalizar cuestionario',
+  'confirm.unanswered': 'Tienes {count} preguntas sin responder. ¿Deseas finalizar?',
+  'confirm.unansweredOne': 'Tienes 1 pregunta sin responder. ¿Deseas finalizar?',
+  'confirm.allAnswered': 'Has respondido todas las preguntas. ¿Deseas finalizar?',
+  'confirm.back': 'Volver al cuestionario',
+  'confirm.submit': 'Sí, finalizar',
+
+  'processing.title': 'Analizando tus respuestas',
+  'processing.explanations': 'Consultando los documentos…',
+  'processing.progress': '{done} de {total} explicaciones generadas',
+
+  'results.heading': 'Resultados',
+  'results.score': 'Calificación',
+  'results.correctOf': '{correct} de {total} correctas',
+  'results.correct': 'Correctas',
+  'results.incorrect': 'Incorrectas',
+  'results.unanswered': 'Sin responder',
+  'results.total': 'Total de preguntas',
+  'results.duration': 'Duración',
+  'results.date': 'Fecha',
+  'results.filterAll': 'Todas',
+  'results.filterCorrect': 'Correctas',
+  'results.filterIncorrect': 'Incorrectas',
+  'results.filterUnanswered': 'Sin responder',
+  'results.expandAll': 'Expandir todo',
+  'results.collapseAll': 'Contraer todo',
+  'results.yourAnswer': 'Tu respuesta',
+  'results.correctAnswer': 'Respuesta correcta',
+  'results.noAnswer': 'No respondida',
+  'results.empty': 'No hay preguntas en esta categoría.',
+  'results.newQuiz': 'Nuevo cuestionario',
+  'results.retry': 'Repetir este cuestionario',
+  'results.retryIncorrect': 'Repetir solo las falladas',
+  'results.summaryChart': 'Distribución de resultados',
+
+  'explanation.heading': 'Documentación de referencia',
+  'explanation.bankNote': 'Nota del banco de preguntas',
+  'explanation.bankNoteHelp':
+    'Justificación escrita por el autor del banco. No proviene de los manuales.',
+  'explanation.evidence': 'Evidencia documental',
+  'explanation.evidenceHelp':
+    'Fragmento citado literalmente del manual indicado. Verifícalo en la página señalada.',
+  'explanation.source': 'Fuente',
+  'explanation.sourceLanguageNote':
+    'El manual solo está disponible en inglés; el fragmento se muestra en su idioma original.',
+  'explanation.insufficient':
+    'No se encontró información suficiente en los documentos proporcionados para respaldar una explicación.',
+  'explanation.insufficientHelp':
+    'El tema de esta pregunta no aparece de forma explícita en los manuales indexados.',
+  'explanation.unavailable':
+    'El banco de preguntas se cargó correctamente, pero los documentos de referencia no están disponibles.',
+  'explanation.error': 'No fue posible consultar los documentos de referencia.',
+  'explanation.loading': 'Consultando los documentos…',
+  'explanation.show': 'Ver documentación',
+  'explanation.hide': 'Ocultar documentación',
+  'explanation.noNarrative':
+    'Esta aplicación no redacta explicaciones: muestra el texto original del manual para que puedas verificarlo tú mismo.',
+
+  'export.heading': 'Exportar resultados',
+  'export.all': 'Todos los resultados',
+  'export.incorrectOnly': 'Solo respuestas incorrectas',
+  'export.pdf': 'PDF',
+  'export.csv': 'CSV',
+  'export.json': 'JSON',
+  'export.preparing': 'Preparando archivo…',
+  'export.failed': 'No se pudo generar el archivo.',
+  'export.nothingToExport': 'No hay respuestas incorrectas que exportar.',
+
+  'error.heading': 'Algo salió mal',
+  'error.bankInvalid':
+    'No se pudo cargar el banco de preguntas. Verifica el archivo JSON.',
+  'error.bankEmpty': 'El banco de preguntas no contiene preguntas válidas.',
+  'error.countRange': 'Selecciona entre 1 y 100 preguntas.',
+  'error.noQuestionsForFilter':
+    'No hay preguntas disponibles con los temas seleccionados.',
+  'error.shortfall':
+    'Solo hay {available} preguntas disponibles; se generó un cuestionario con esa cantidad.',
+  'error.validationSummary':
+    'Se omitieron {count} preguntas con problemas de formato.',
+  'error.docsUnavailable':
+    'Los documentos de referencia no se pudieron cargar. El cuestionario funciona igual, pero no habrá citas documentales.',
+
+  'a11y.correct': 'Correcta',
+  'a11y.incorrect': 'Incorrecta',
+  'a11y.unanswered': 'Sin responder',
+  'a11y.selected': 'Seleccionada',
+} as const;

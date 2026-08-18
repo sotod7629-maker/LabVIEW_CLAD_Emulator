@@ -27,6 +27,16 @@ const STOPWORDS_ES = new Set(
   ).split(/\s+/),
 );
 
+/**
+ * True for words the index deliberately omits (English stopwords).
+ *
+ * Their absence from the index carries no information, so they must never be
+ * treated as evidence that a topic is undocumented.
+ */
+export function isIndexStopword(token: string): boolean {
+  return STOPWORDS.has(token);
+}
+
 export function stripDiacritics(text: string): string {
   return text.normalize('NFD').replace(/[̀-ͯ]/g, '');
 }

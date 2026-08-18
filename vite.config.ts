@@ -6,7 +6,12 @@ export default defineConfig({
   plugins: [react()],
   base: './',
   resolve: {
-    alias: { '@': fileURLToPath(new URL('./src', import.meta.url)) },
+    alias: {
+      '@': fileURLToPath(new URL('./src', import.meta.url)),
+      // jsPDF lazily imports these for doc.html(), which this app never calls.
+      html2canvas: fileURLToPath(new URL('./src/lib/export/stubs/empty.ts', import.meta.url)),
+      dompurify: fileURLToPath(new URL('./src/lib/export/stubs/empty.ts', import.meta.url)),
+    },
   },
   build: {
     outDir: 'dist',

@@ -62,8 +62,11 @@ const PHRASE_MAP: ReadonlyArray<readonly [RegExp, string]> = [
   [/condicion\s+de\s+carrera/g, 'race condition'],
   [/flujo\s+de\s+datos/g, 'dataflow'],
   [/patron\s+de\s+diseno/g, 'design pattern'],
-  [/productor\s+consumidor/g, 'producer consumer'],
   [/estructura\s+de\s+eventos/g, 'event structure'],
+  [/productor\s*[\/\s-]\s*consumidor/g, 'producer consumer'],
+  [/maestro\s*[\/\s-]\s*esclavo/g, 'master slave'],
+  [/cociente\s+y\s+residuo/g, 'quotient remainder'],
+  [/secuencia\s+plana/g, 'flat sequence'],
 ];
 
 /** Single-token Spanish → English mappings. */
@@ -228,6 +231,40 @@ const TOKEN_MAP: Readonly<Record<string, string>> = {
   modularidad: 'modularity',
   subvi: 'subvi',
   subvis: 'subvis',
+
+  // Added after calibration against the bank: these Spanish terms were being
+  // misread as English technical terms absent from the guides, which wrongly
+  // suppressed otherwise well-supported explanations.
+  productor: 'producer',
+  consumidor: 'consumer',
+  maestro: 'master',
+  esclavo: 'slave',
+  operacion: 'operation',
+  operaciones: 'operations',
+  automatica: 'automatic',
+  enumerado: 'enum',
+  orden: 'order',
+  detener: 'stop',
+  agregar: 'add',
+  anadir: 'add',
+  configurar: 'configure',
+  residuo: 'remainder',
+  cociente: 'quotient',
+  plana: 'flat',
+  plano: 'flat',
+  sin: 'without',
+  todos: 'all',
+  todas: 'all',
+  mundo: 'world',
+  hola: 'hello',
+
+  // Abbreviations the bank uses but the guides spell out in full.
+  typedef: 'type definition',
+  sgl: 'single',
+  dbl: 'double',
+  ext: 'extended',
+  i32: 'integer',
+  u32: 'integer',
 };
 
 /**
@@ -256,4 +293,43 @@ export function bridgeToEnglish(text: string): string {
   }
 
   return additions.length ? `${working} ${additions.join(' ')}` : working;
+}
+
+/**
+ * Tokens in `text` that the bridge recognises as SPANISH — either mapped
+ * directly or consumed by a Spanish phrase pattern.
+ *
+ * The evidence gate uses this to tell two very different situations apart when
+ * a term is missing from the English guides:
+ *
+ *   "frontal"  (from "Panel Frontal")  — missing because it is Spanish. The
+ *              concept IS documented, under its English name.
+ *   "tick"     (from "Tick Count (ms)") — missing because the guides genuinely
+ *              never mention it.
+ *
+ * Only the second kind should block an explanation.
+ */
+export function spanishSourceTokens(text: string): Set<string> {
+  const normalized = text
+    .toLowerCase()
+    .normalize('NFD')
+    .replace(/[\u0300-\u036f]/g, '');
+  const tokens = new Set<string>();
+
+  for (const [pattern] of PHRASE_MAP) {
+    pattern.lastIndex = 0;
+    const matches = normalized.match(pattern);
+    if (!matches) continue;
+    for (const fragment of matches) {
+      for (const token of fragment.split(/[^a-z0-9]+/)) {
+        if (token) tokens.add(token);
+      }
+    }
+  }
+
+  for (const token of normalized.replace(/[^a-z0-9]+/g, ' ').split(/\s+/)) {
+    if (TOKEN_MAP[token]) tokens.add(token);
+  }
+
+  return tokens;
 }

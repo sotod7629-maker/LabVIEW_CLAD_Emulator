@@ -50,21 +50,22 @@ import type {
  *
  * CALIBRATION (reproduced by src/lib/explain/retrieval.probe.test.ts)
  * ------------------------------------------------------------------
- * Swept over the full 300-question bank. Ground truth for false positives:
- * questions whose subject appears ZERO times in either guide ("Formula Node",
- * "Trim Whitespace", "VI Template"). Ground truth for false negatives: ten
+ * Swept over the full 300-question bank. Ground truth for false positives: 14
+ * questions whose subject was verified by grep to occur ZERO times in either
+ * participant guide (Formula Node, Trim Whitespace, VI Template, Tick Count,
+ * Flat Sequence, Notifier, Quotient). Ground truth for false negatives: ten
  * questions the guides unambiguously define.
  *
- *   keyCov  plainCov   documented   false positives   recovered
- *    1.0      0.30       283/300         2/7            10/10
- *    1.0      0.35       276/300         1/7            10/10
- *    1.0      0.40       267/300         0/7             9/10   <-- chosen
- *    1.0      0.45       260/300         0/7             9/10
+ *   plainCov   documented   passages shown for absent topics   recovered
+ *     0.30      272/300                 3/14                    10/10
+ *     0.35      267/300                 2/14                    10/10
+ *     0.40      243/300                 0/14                     9/10   <-- chosen
+ *     0.45      241/300                 0/14                     9/10
  *
  * 0.40 is the loosest setting that never presents a passage as documenting a
- * topic the guides do not contain. The ~89% documented rate reflects the
- * guides' real coverage of the CLAD blueprint; the remaining ~11% correctly
- * report insufficient evidence instead of guessing.
+ * topic the guides do not contain. The ~81% documented rate reflects the
+ * guides' real coverage of the CLAD blueprint; the rest correctly report
+ * insufficient evidence instead of guessing (§17).
  */
 const KEY_TERM_COVERAGE_THRESHOLD = 1;
 const COVERAGE_THRESHOLD = 0.4;

@@ -14,8 +14,8 @@
  * never composes prose.
  */
 
-import { bridgeToEnglish } from './termBridge';
-import { tokenizeQuery } from './tokenize';
+import { bridgeToEnglish, spanishSourceTokens } from './termBridge';
+import { isIndexStopword, tokenizeQuery } from './tokenize';
 import type { DocChunk, DocIndex } from './docIndex';
 
 const K1 = 1.5;
@@ -112,26 +112,58 @@ export interface SearchHit {
  * Leading words are skipped: Spanish interrogatives ("¿Cuál", "¿Qué") are
  * capitalised by grammar, not by terminology.
  */
-export function extractProperNounTokens(...texts: string[]): Set<string> {
+export function extractProperNounTokens(
+  texts: readonly string[],
+  options: { skipSentenceInitial?: boolean } = {},
+): Set<string> {
+  const skipInitial = options.skipSentenceInitial ?? true;
   const tokens = new Set<string>();
+
   for (const text of texts) {
     // Split on sentence boundaries so each sentence's first word can be skipped.
     for (const sentence of text.split(/(?<=[.!?¿;:])\s+|\n+/)) {
       const words = sentence.trim().split(/\s+/);
       words.forEach((word, index) => {
-        const bare = word.replace(/^[^\p{L}]+|[^\p{L}]+$/gu, '');
-        if (bare.length < 3) return;
-        if (index === 0) return;
+        if (skipInitial && index === 0) return;
+        const bare = word.replace(/^[^\p{L}\p{N}]+|[^\p{L}\p{N}]+$/gu, '');
         if (!/^\p{Lu}/u.test(bare)) return;
-        const normalized = bare
-          .toLowerCase()
-          .normalize('NFD')
-          .replace(/[\u0300-\u036f]/g, '');
-        if (normalized) tokens.add(normalized);
+
+        // Compounds such as "Productor/Consumidor", "Open/Create/Replace" and
+        // "Top-Level" name several concepts at once; index them individually.
+        for (const part of bare.split(/[/\\_-]+/)) {
+          const normalized = part
+            .toLowerCase()
+            .normalize('NFD')
+            .replace(/[\u0300-\u036f]/g, '');
+          if (normalized.length < 3) continue;
+          // Reject anything carrying digits or operators ("A=False", "1D").
+          if (!/^[a-z]+$/.test(normalized)) continue;
+          // A stopword is missing from the index by design, never by coverage.
+          if (isIndexStopword(normalized)) continue;
+          tokens.add(normalized);
+        }
       });
     }
   }
   return tokens;
+}
+
+/**
+ * Is this answer text a NAME rather than a sentence?
+ *
+ * Answers in the bank come in two shapes: short Title Case labels naming a
+ * LabVIEW feature ("Tick Count (ms)", "Concatenate Strings") and full Spanish
+ * sentences ("Porque el Enum asocia nombres descriptivos…"). The first word
+ * matters in the first case and is merely grammatical capitalisation in the
+ * second, so the two must be treated differently — otherwise "Tick" is
+ * discarded and a question about an undocumented function slips through the
+ * evidence gate.
+ */
+export function looksLikeLabel(text: string): boolean {
+  const words = text.trim().split(/\s+/).filter(Boolean);
+  if (words.length === 0 || words.length > 5) return false;
+  const capitalised = words.filter((w) => /^[\p{Lu}(]/u.test(w)).length;
+  return capitalised / words.length >= 0.5;
 }
 
 /**
@@ -213,10 +245,36 @@ export function searchDocuments(docIndex: DocIndex, query: SearchQuery): SearchH
   // Terms that both name a concept (capitalised in the bank) and are rare in
   // the guides. If the question names one, a passage that never mentions it is
   // not evidence for that question, however much other vocabulary it shares.
-  const properNouns = extractProperNounTokens(query.question, query.correctAnswer);
+  const properNouns = new Set([
+    ...extractProperNounTokens([query.question]),
+    // A label-shaped answer names a feature; its first word is significant.
+    ...extractProperNounTokens([query.correctAnswer], {
+      skipSentenceInitial: !looksLikeLabel(query.correctAnswer),
+    }),
+  ]);
+  const spanishTokens = spanishSourceTokens(`${query.question} ${query.correctAnswer}`);
   const keyTerms = terms.filter((t) => t.idf >= RARE_IDF && properNouns.has(t.term));
-  const keyIdfTotal = keyTerms.reduce((acc, t) => acc + t.idf, 0);
   const keySet = new Set(keyTerms.map((t) => t.term));
+
+  // A named term that is ABSENT FROM THE CORPUS ENTIRELY is the strongest
+  // evidence that the guides do not cover this question — stronger than any
+  // amount of matched vocabulary. It must therefore weigh against the gate
+  // rather than being dropped for being unmatchable, which is what happened
+  // when only indexed terms were considered.
+  //
+  // Spanish-origin tokens are excluded: "frontal" is missing from an English
+  // manual for language reasons, not coverage reasons.
+  const maxIdf = Math.log(1 + (totalDocs + 0.5) / 0.5);
+  const absentKeyTerms = [...properNouns].filter(
+    (term) =>
+      !docIndex.index.postings[term] &&
+      !spanishTokens.has(term) &&
+      term.length >= 3 &&
+      !/^\d+$/.test(term),
+  );
+
+  const keyIdfTotal =
+    keyTerms.reduce((acc, t) => acc + t.idf, 0) + absentKeyTerms.length * maxIdf;
 
   const scores = new Map<number, number>();
   const matchedIdf = new Map<number, number>();
@@ -278,7 +336,7 @@ export function searchDocuments(docIndex: DocIndex, query: SearchQuery): SearchH
       salientTermCount: salientTerms.length,
       keyTermCoverage:
         keyIdfTotal > 0 ? Math.min(1, (matchedKeyIdf.get(chunkIndex) ?? 0) / keyIdfTotal) : 1,
-      keyTerms: keyTerms.map((t) => t.term),
+      keyTerms: [...keyTerms.map((t) => t.term), ...absentKeyTerms],
       matchedTerms: [...(matched.get(chunkIndex) ?? [])],
     });
   }
