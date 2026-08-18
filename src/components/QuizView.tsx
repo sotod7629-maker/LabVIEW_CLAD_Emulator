@@ -6,7 +6,7 @@
  * users expect from a set of mutually exclusive choices.
  */
 
-import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
+import { useCallback, useMemo, useRef, useState } from 'react';
 import type { OptionKey } from '../lib/data/schema';
 import type { QuizSession } from '../lib/quiz/types';
 import { countUnanswered } from '../lib/quiz/generateQuiz';
@@ -49,10 +49,6 @@ export function QuizView({
     () => (question ? question.options.findIndex((o) => o.id === selectedId) : -1),
     [question, selectedId],
   );
-
-  useEffect(() => {
-    optionRefs.current = [];
-  }, [session.currentIndex]);
 
   const handleOptionKeyDown = useCallback(
     (event: React.KeyboardEvent, index: number) => {
@@ -140,6 +136,10 @@ export function QuizView({
               <button
                 key={option.id}
                 ref={(element) => {
+                  // React clears this with null on unmount, so the array stays
+                  // in sync as the question changes. Do NOT reset it from an
+                  // effect: effects run after refs are attached and would wipe
+                  // the entries that arrow-key navigation depends on.
                   optionRefs.current[index] = element;
                 }}
                 type="button"

@@ -1,0 +1,3011 @@
+{
+ "language": "en",
+ "provenance": "Machine translation of the Spanish source bank, produced during development. The Spanish bank remains authoritative: grading always uses its correct_answer, and this overlay is keyed by the original option letters so it cannot change which option is correct.",
+ "generatedAt": "2026-08-18",
+ "coverage": {
+  "translated": 300,
+  "total": 300
+ },
+ "translations": {
+  "1": {
+   "question": "Which of the following windows of a VI contains the controls and indicators that the end user interacts with?",
+   "explanation": "The Front Panel is the user interface of the VI, where controls (inputs) and indicators (outputs) are placed.",
+   "options": {
+    "a": "Front Panel",
+    "b": "Block Diagram",
+    "c": "Connector pane",
+    "d": "Project Explorer"
+   }
+  },
+  "2": {
+   "question": "In which of the following windows is the graphical programming (G code) of a VI carried out?",
+   "explanation": "The block diagram contains the graphical code that defines the behavior of the VI, made up of terminals, nodes and wires.",
+   "options": {
+    "a": "Block Diagram",
+    "b": "Front Panel",
+    "c": "Controls palette",
+    "d": "Context Help window"
+   }
+  },
+  "3": {
+   "question": "Which palette is used to place controls and indicators on the Front Panel?",
+   "explanation": "The Controls palette is available only on the Front Panel and contains the input/output objects for the user.",
+   "options": {
+    "a": "Controls palette",
+    "b": "Functions palette",
+    "c": "Tools palette",
+    "d": "Navigation palette"
+   }
+  },
+  "4": {
+   "question": "Which palette is used to place nodes, functions and structures on the Block Diagram?",
+   "explanation": "The Functions palette is available only on the Block Diagram and groups together VIs, functions and structures.",
+   "options": {
+    "a": "Functions palette",
+    "b": "Controls palette",
+    "c": "Tools palette",
+    "d": "Projects palette"
+   }
+  },
+  "5": {
+   "question": "Which key combination shows or hides the Context Help window in LabVIEW?",
+   "explanation": "Ctrl+H toggles the visibility of the Context Help window, which displays information about the object the cursor is hovering over.",
+   "options": {
+    "a": "Ctrl+H",
+    "b": "Ctrl+K",
+    "c": "Ctrl+Shift+H",
+    "d": "Ctrl+Alt+H"
+   }
+  },
+  "6": {
+   "question": "In the Context Help window, how are the required terminals of a function represented?",
+   "explanation": "LabVIEW distinguishes terminals visually: required terminals appear in bold, recommended ones in plain text, and optional ones dimmed/grayed out.",
+   "options": {
+    "a": "In bold text",
+    "b": "In italic text",
+    "c": "In strikethrough text",
+    "d": "With a question mark"
+   }
+  },
+  "7": {
+   "question": "Which graphical element, located in the upper-right corner of the Front Panel, visually identifies a VI and allows it to be used as a SubVI?",
+   "explanation": "The icon is the graphical representation of the VI; when that VI is placed inside another one, the icon is shown as a node on the block diagram.",
+   "options": {
+    "a": "The VI icon",
+    "b": "The connector pane",
+    "c": "The run selector",
+    "d": "The toolbar"
+   }
+  },
+  "8": {
+   "question": "Which element defines the inputs and outputs available when a VI is used as a SubVI?",
+   "explanation": "The connector pane is a set of terminals that maps the front panel controls and indicators to the inputs and outputs of the SubVI.",
+   "options": {
+    "a": "The connector pane",
+    "b": "The VI icon",
+    "c": "The Controls palette",
+    "d": "The project tree"
+   }
+  },
+  "9": {
+   "question": "Which of the following tools on the Tools palette is used to create wires between terminals on the block diagram?",
+   "explanation": "The Wiring tool, shaped like a spool of wire, is used to connect terminals to each other with wires.",
+   "options": {
+    "a": "Wiring tool",
+    "b": "Operating tool",
+    "c": "Labeling tool",
+    "d": "Probe tool"
+   }
+  },
+  "10": {
+   "question": "Which tool on the Tools palette is used to enter values into controls or interact with them during execution?",
+   "explanation": "The Operating tool, shaped like a hand, lets you enter values and interact with controls and indicators on the front panel.",
+   "options": {
+    "a": "Operating tool",
+    "b": "Wiring tool",
+    "c": "Positioning tool",
+    "d": "Labeling tool"
+   }
+  },
+  "11": {
+   "question": "When you press the Tab key (or Shift+Tab) while Automatic Tool Selection is enabled, what happens?",
+   "explanation": "With automatic tool selection enabled, Tab cycles through the tools on the palette without having to select them manually.",
+   "options": {
+    "a": "LabVIEW cycles through the different available tools",
+    "b": "The VI is saved automatically",
+    "c": "The VI runs",
+    "d": "The Context Help window opens"
+   }
+  },
+  "12": {
+   "question": "In which window of the LabVIEW environment are VIs, libraries and files related to an application organized hierarchically?",
+   "explanation": "The Project Explorer lets you organize VIs, libraries, targets and build specifications within a single project file (.lvproj).",
+   "options": {
+    "a": "Project Explorer",
+    "b": "Block Diagram",
+    "c": "Front Panel",
+    "d": "Context Help window"
+   }
+  },
+  "13": {
+   "question": "Which link inside the Context Help window provides access to the full help page for a function in LabVIEW Help?",
+   "explanation": "The 'Detailed help' link opens the extended documentation for the function in the LabVIEW help system.",
+   "options": {
+    "a": "The 'Detailed help' link",
+    "b": "The 'Run' button",
+    "c": "The 'Search' button",
+    "d": "The magnifying glass icon on the front panel"
+   }
+  },
+  "14": {
+   "question": "Which action lets you quickly find a specific function within the Functions palette without navigating through the subcategories?",
+   "explanation": "The Controls and Functions palettes include a search mode that lets you type the name of an item and locate it directly.",
+   "options": {
+    "a": "Use the palette's search button (magnifying glass icon)",
+    "b": "Use the Labeling tool",
+    "c": "Press Ctrl+R",
+    "d": "Open the Project Explorer"
+   }
+  },
+  "15": {
+   "question": "A single VI can work as a standalone program or, if an icon and connector pane are configured for it, as:",
+   "explanation": "Any VI can become a SubVI (equivalent to a subroutine or function) as long as its icon and connector pane are defined.",
+   "options": {
+    "a": "A reusable SubVI within other VIs",
+    "b": "A control structure",
+    "c": "A mandatory global variable",
+    "d": "A project file"
+   }
+  },
+  "16": {
+   "question": "Which principle determines the order in which code executes in LabVIEW?",
+   "explanation": "LabVIEW is a dataflow programming language: a node executes only once it has received valid data at all of its required inputs.",
+   "options": {
+    "a": "Dataflow: a node executes when all of its input data is available",
+    "b": "The order in which the nodes were placed on the diagram",
+    "c": "The alphabetical order of the VI names",
+    "d": "Top to bottom, regardless of dependencies"
+   }
+  },
+  "17": {
+   "question": "In a block diagram with two functions that are not connected to each other by wires or data dependencies, what can be stated about their execution order?",
+   "explanation": "When there is no explicit data dependency between two nodes, LabVIEW does not guarantee a particular order and may execute them in parallel.",
+   "options": {
+    "a": "Their execution order is not guaranteed; LabVIEW may run them in parallel or in any order",
+    "b": "They always execute from left to right",
+    "c": "They always execute from top to bottom",
+    "d": "They execute in the order in which they were created"
+   }
+  },
+  "18": {
+   "question": "What is the main difference between LabVIEW's dataflow model and a traditional text-based programming language (such as C)?",
+   "explanation": "In text-based languages code runs line by line in the order written; in dataflow, a node fires when its inputs are ready, which allows implicit parallelism.",
+   "options": {
+    "a": "In dataflow, execution depends on data availability rather than on a linear sequence of instructions",
+    "b": "In dataflow there are no variables",
+    "c": "In dataflow you cannot use loops",
+    "d": "In dataflow all code always runs in a single thread"
+   }
+  },
+  "19": {
+   "question": "What is the name of the visual connection that carries data between two terminals on the block diagram?",
+   "explanation": "Wires represent the flow of data between output and input terminals; their color and thickness indicate the data type being carried.",
+   "options": {
+    "a": "Wire",
+    "b": "Terminal",
+    "c": "Node",
+    "d": "Tunnel"
+   }
+  },
+  "20": {
+   "question": "What is a 'node' in the context of a LabVIEW block diagram?",
+   "explanation": "A node is a block diagram element that performs an action: it can be a function, a SubVI, a structure or a Formula Node.",
+   "options": {
+    "a": "Any object with inputs and/or outputs that processes data during execution, such as a function, VI or structure",
+    "b": "Only a front panel control",
+    "c": "A wire that connects two terminals",
+    "d": "A free-text comment"
+   }
+  },
+  "21": {
+   "question": "If two SubVIs do not share data with each other (there are no wires connecting them directly or indirectly), which mechanism can be used to force one to execute before the other?",
+   "explanation": "When you need to force an order without a natural data dependency, you can use a Sequence Structure or chain the error cluster between the VIs.",
+   "options": {
+    "a": "Use a Sequence Structure or an artificial data dependency (for example, with the error cluster)",
+    "b": "Place one above the other on the diagram",
+    "c": "Rename them in alphabetical order",
+    "d": "It is not possible to control execution order in LabVIEW"
+   }
+  },
+  "22": {
+   "question": "What does a node require in order to execute in a dataflow diagram?",
+   "explanation": "The dataflow principle states that a node triggers its execution only when all of its necessary inputs have received valid data.",
+   "options": {
+    "a": "That all of its required input terminals have data available",
+    "b": "That the user presses a specific button",
+    "c": "That it is located at the top of the diagram",
+    "d": "That it has at least one unwired output"
+   }
+  },
+  "23": {
+   "question": "In a dataflow architecture, what advantage does it natively offer with respect to code parallelism?",
+   "explanation": "Because execution is based on data availability rather than textual order, two branches of code with no dependencies between them can run in parallel naturally.",
+   "options": {
+    "a": "It allows independent branches of code to run in parallel automatically, without having to create threads manually",
+    "b": "It forces all code to be sequential",
+    "c": "It completely eliminates the possibility of run-time errors",
+    "d": "It prevents the use of nested loops"
+   }
+  },
+  "24": {
+   "question": "A VI has a numeric control connected to two different functions (A and B) that do not depend on each other, and the outputs of both are connected to a third node C. What can be stated about the execution order of A, B and C?",
+   "explanation": "C depends on the data produced by A and B, so it must wait for both to finish; A and B, having no dependency on each other, may execute in any order or simultaneously.",
+   "options": {
+    "a": "A and B may execute in any order or in parallel, but C must execute after both A and B have finished",
+    "b": "C executes first, then A and B",
+    "c": "A always executes before B because it is further to the left",
+    "d": "The order depends solely on the order in which the nodes were placed"
+   }
+  },
+  "25": {
+   "question": "Which block diagram element represents a point where data enters or leaves a structure (such as a loop)?",
+   "explanation": "A tunnel is the point where a wire crosses the border of a structure, carrying data into or out of it.",
+   "options": {
+    "a": "Tunnel",
+    "b": "Icon",
+    "c": "Connector pane",
+    "d": "Free label"
+   }
+  },
+  "26": {
+   "question": "Why is it incorrect, in a well-designed block diagram, to rely on the spatial positioning of nodes to infer execution order?",
+   "explanation": "The visual position of a node does not determine when it executes; only the availability of its input data does, although it is good practice to arrange the diagram from left to right to reflect the logical flow.",
+   "options": {
+    "a": "Because the actual execution order is determined by data dependencies, not by the visual position of the nodes",
+    "b": "Because LabVIEW ignores node position when compiling, generating errors",
+    "c": "Because the compiler randomly reorders the nodes on every run",
+    "d": "Because LabVIEW always executes from right to left"
+   }
+  },
+  "27": {
+   "question": "Which of the following is NOT a valid way to force an execution dependency between two nodes with no natural data relationship?",
+   "explanation": "Position on the diagram (X or Y coordinate) creates no real data dependency; only error wiring or sequence structures force an order.",
+   "options": {
+    "a": "Placing both nodes at the same X coordinate on the diagram",
+    "b": "Chaining the error cluster between the two nodes",
+    "c": "Using a Sequence Structure",
+    "d": "Using a Flat Sequence with the nodes in different frames"
+   }
+  },
+  "28": {
+   "question": "A VI contains a While Loop and, outside of it, an indicator wired to the loop output. When is that indicator updated with the final value?",
+   "explanation": "By dataflow, data leaving a structure (through a tunnel) is available only once the structure completes execution; the indicator outside the loop receives the final value after the last iteration.",
+   "options": {
+    "a": "Only after the loop completes all of its iterations and finishes",
+    "b": "On every loop iteration, in real time",
+    "c": "Before the loop starts executing",
+    "d": "Never, because indicators cannot be wired outside a loop"
+   }
+  },
+  "29": {
+   "question": "What happens if you try to connect two different output wires to the same input terminal in LabVIEW?",
+   "explanation": "An input terminal can receive only one wire; trying to connect two different sources to the same terminal produces a wiring error that breaks the VI.",
+   "options": {
+    "a": "LabVIEW does not allow it and flags a wiring error (broken VI)",
+    "b": "LabVIEW automatically adds both values together",
+    "c": "LabVIEW uses the last wire connected and ignores the previous one",
+    "d": "LabVIEW creates an automatic branch"
+   }
+  },
+  "30": {
+   "question": "In a dataflow diagram, the same output of a node is connected simultaneously to two different nodes through a wire branch. What value does each destination node receive?",
+   "explanation": "When a wire is branched, LabVIEW sends a copy of the same data to each branch; both destination nodes receive the complete value independently, without altering the original.",
+   "options": {
+    "a": "Both receive an identical copy of the same value, independently",
+    "b": "The first receives the value and the second receives an empty value",
+    "c": "Only one of the two nodes can receive the data; the other is left unconnected",
+    "d": "The value is split between the two nodes"
+   }
+  },
+  "31": {
+   "question": "What color are floating-point (double) numeric data wires typically shown in LabVIEW?",
+   "explanation": "Floating-point numeric data (Double Precision) is shown with orange wires; integers (I32) with blue wires.",
+   "options": {
+    "a": "Orange",
+    "b": "Blue",
+    "c": "Green",
+    "d": "Pink"
+   }
+  },
+  "32": {
+   "question": "What color are Boolean data wires shown in LabVIEW?",
+   "explanation": "Boolean data (TRUE/FALSE) is represented by thin green wires.",
+   "options": {
+    "a": "Green",
+    "b": "Pink",
+    "c": "Blue",
+    "d": "Orange"
+   }
+  },
+  "33": {
+   "question": "What color are String data wires shown in LabVIEW?",
+   "explanation": "String data is shown with pink/magenta wires on the block diagram.",
+   "options": {
+    "a": "Pink",
+    "b": "Blue",
+    "c": "Green",
+    "d": "Orange"
+   }
+  },
+  "34": {
+   "question": "Which representation visually identifies that Array data is travelling along a wire?",
+   "explanation": "Arrays are shown with a thicker wire than a scalar of the same type, keeping the color associated with the base data type (orange for numeric, and so on).",
+   "options": {
+    "a": "The wire is drawn thicker than a scalar wire, in the color of the base data type",
+    "b": "The wire always changes to black",
+    "c": "The wire flashes continuously",
+    "d": "The wire is drawn dotted"
+   }
+  },
+  "35": {
+   "question": "What is a 'coercion dot' on a LabVIEW block diagram?",
+   "explanation": "The coercion dot is a visual indicator (gray dot) that appears when LabVIEW automatically converts one numeric type into another compatible one, for example from integer to floating point.",
+   "options": {
+    "a": "A small gray dot indicating that LabVIEW automatically converted one numeric data type to another to match the input terminal",
+    "b": "A compile error that prevents the VI from running",
+    "c": "An indicator that two wires are short-circuited",
+    "d": "A marker indicating total data loss"
+   }
+  },
+  "36": {
+   "question": "If you wire a 32-bit integer value (I32) to a terminal that expects a double-precision floating-point value (DBL), what happens?",
+   "explanation": "LabVIEW performs automatic coercion between compatible numeric types, showing a coercion dot as a visual warning that an implicit conversion took place.",
+   "options": {
+    "a": "LabVIEW automatically converts the value to DBL and shows a coercion dot at the terminal",
+    "b": "LabVIEW generates a run-time error and stops the VI",
+    "c": "The VI breaks and cannot run",
+    "d": "The value is truncated to zero"
+   }
+  },
+  "37": {
+   "question": "Which of the following is a signed, 16-bit integer numeric data type available in LabVIEW?",
+   "explanation": "I16 represents a signed 16-bit integer. The 'I' prefix indicates signed and 'U' indicates unsigned.",
+   "options": {
+    "a": "I16",
+    "b": "U16",
+    "c": "DBL",
+    "d": "EXT"
+   }
+  },
+  "38": {
+   "question": "Which prefix does LabVIEW use to identify an UNSIGNED integer numeric type?",
+   "explanation": "Unsigned integer numeric types are identified with the 'U' (unsigned) prefix, such as U8, U16, U32 and U64.",
+   "options": {
+    "a": "U (for example U8, U16, U32)",
+    "b": "I (for example I8, I16)",
+    "c": "DBL",
+    "d": "SGL"
+   }
+  },
+  "39": {
+   "question": "What is the main difference between the SGL, DBL and EXT numeric types in LabVIEW?",
+   "explanation": "SGL (single precision, 32 bits), DBL (double precision, 64 bits) and EXT (extended precision) represent floating-point numbers with different precision and range.",
+   "options": {
+    "a": "They differ in the precision (number of bits) used to represent the floating-point value",
+    "b": "SGL is for integers, DBL for Booleans and EXT for strings",
+    "c": "They differ only in wire color",
+    "d": "EXT can only be used inside clusters"
+   }
+  },
+  "40": {
+   "question": "Which control is typically used to represent a selection among several predefined named values, where each value has an underlying integer associated with it that IS saved in type definitions (typedefs) and keeps its value when items are inserted or deleted?",
+   "explanation": "The Enum control associates each visible text item with an integer value; unlike the Ring, it is intended to represent a closed, typed set of named states.",
+   "options": {
+    "a": "Enum",
+    "b": "Ring",
+    "c": "Numeric slide",
+    "d": "Cluster"
+   }
+  },
+  "41": {
+   "question": "What key difference exists between a Ring control and an Enum control in LabVIEW?",
+   "explanation": "Although both associate text with numeric values, the Ring is more flexible in its underlying numeric type, whereas the Enum is typically used as a data type to represent named states, for example in state machines.",
+   "options": {
+    "a": "The Ring generally represents arbitrary integer values associated with text and can be combined with different numeric data types, whereas the Enum is aimed more at representing a fixed set of named states",
+    "b": "There is no difference; they are synonyms",
+    "c": "The Ring only accepts Booleans and the Enum only accepts strings",
+    "d": "The Enum cannot be used in a Case Structure"
+   }
+  },
+  "42": {
+   "question": "What Boolean value does a newly created Boolean control have by default, before the user changes it?",
+   "explanation": "By convention, LabVIEW Boolean controls normally start in the FALSE state until the user interacts with them or their default value is changed.",
+   "options": {
+    "a": "FALSE",
+    "b": "TRUE",
+    "c": "NULL",
+    "d": "It always depends on the visual style chosen"
+   }
+  },
+  "43": {
+   "question": "What happens if you wire a Boolean value directly to a numeric input terminal in LabVIEW?",
+   "explanation": "Unlike coercion between numeric types, LabVIEW does not wire a Boolean directly to a numeric terminal; an explicit conversion function (Boolean to (0,1)) is required.",
+   "options": {
+    "a": "LabVIEW does not allow the direct connection; the Boolean must be explicitly converted to a numeric with a conversion function",
+    "b": "LabVIEW converts it automatically without showing any coercion dot",
+    "c": "The VI runs using 0 for TRUE and 1 for FALSE",
+    "d": "A warning but not an error is generated, and the VI runs anyway without conversion"
+   }
+  },
+  "44": {
+   "question": "Which of the following options correctly describes a 'string' in LabVIEW?",
+   "explanation": "A string is a sequence of characters (bytes) used for text, although it can also contain arbitrary binary data, as in communications or protocols.",
+   "options": {
+    "a": "A sequence of text characters, which can also represent binary data byte by byte",
+    "b": "A data type exclusively for representing negative numbers",
+    "c": "A two-dimensional array of Booleans",
+    "d": "A type of flow control structure"
+   }
+  },
+  "45": {
+   "question": "A VI has a While Loop whose conditional terminal is wired from a Boolean button configured as 'Stop if True'. If inside the loop there is also a numeric comparison whose Boolean result is mistakenly connected to the same conditional terminal through a logical AND function together with the button, what data type does the AND function produce?",
+   "explanation": "The logical AND function operates on Booleans and produces a Boolean output, which is compatible with the conditional terminal of the While Loop.",
+   "options": {
+    "a": "Boolean",
+    "b": "Integer numeric",
+    "c": "String",
+    "d": "Array of Booleans"
+   }
+  },
+  "46": {
+   "question": "Which of the following combinations would NOT produce a coercion dot when wired?",
+   "explanation": "When the data type of the wire exactly matches the type expected by the terminal, no conversion occurs and therefore no coercion dot appears.",
+   "options": {
+    "a": "An I32 connected to a terminal that expects I32",
+    "b": "An I16 connected to a terminal that expects I32",
+    "c": "A U8 connected to a terminal that expects DBL",
+    "d": "An I32 connected to a terminal that expects SGL"
+   }
+  },
+  "47": {
+   "question": "Which numeric data type does LabVIEW use by default when creating a standard numeric control from the 'Numeric' palette?",
+   "explanation": "By default, the standard numeric control from the Numeric palette is created as Double (DBL), the most commonly used floating-point numeric type in LabVIEW.",
+   "options": {
+    "a": "Double (DBL), double-precision floating point",
+    "b": "I8, 8-bit integer",
+    "c": "U64, unsigned 64-bit integer",
+    "d": "EXT, extended precision"
+   }
+  },
+  "48": {
+   "question": "What advantage does using an integer data type (for example I32) instead of a floating-point one (DBL) offer when you know a value will always be a whole number?",
+   "explanation": "Integer types represent exact values without the rounding problems of floating point and, depending on the size chosen, can occupy less memory than a 64-bit DBL.",
+   "options": {
+    "a": "It avoids the rounding/precision errors associated with floating point and can reduce memory use",
+    "b": "Integers allow fractional values to be represented with greater precision",
+    "c": "Integers are mandatory in order to use Case structures",
+    "d": "There is no advantage; DBL is always better"
+   }
+  },
+  "49": {
+   "question": "Which item on the Controls palette is used to create a Path value (a file or folder path)?",
+   "explanation": "LabVIEW offers a specific data type called Path, with its own control/indicator, to represent file or folder paths independently of the operating system.",
+   "options": {
+    "a": "A Path control (File Path)",
+    "b": "A numeric control",
+    "c": "A Boolean control",
+    "d": "An Enum control"
+   }
+  },
+  "50": {
+   "question": "What happens if you try to wire a String value directly to an input terminal that expects a numeric value, without using any conversion function?",
+   "explanation": "Unlike coercion between compatible numeric types, LabVIEW does not allow a string to be wired directly to a numeric terminal; an explicit function such as 'String to Number' or 'Scan From String' is required.",
+   "options": {
+    "a": "LabVIEW does not allow the connection and flags a wiring error (broken VI)",
+    "b": "LabVIEW automatically converts the string to a numeric without warning",
+    "c": "The VI compiles anyway and fails only at run time",
+    "d": "LabVIEW interprets the string as a numeric array of characters"
+   }
+  },
+  "51": {
+   "question": "Which LabVIEW structure repeatedly executes the code contained inside it until a Boolean stop condition is met?",
+   "explanation": "The While Loop repeats execution of its subdiagram indefinitely until its conditional terminal receives the Boolean value that indicates it should stop.",
+   "options": {
+    "a": "While Loop",
+    "b": "For Loop",
+    "c": "Case Structure",
+    "d": "Sequence Structure"
+   }
+  },
+  "52": {
+   "question": "Which terminal of a For Loop determines the number of iterations that will be executed?",
+   "explanation": "The For Loop's count terminal 'N', in the upper-left corner, defines how many times the loop will execute.",
+   "options": {
+    "a": "The count terminal (N)",
+    "b": "The conditional terminal (i)",
+    "c": "The iteration terminal (i)",
+    "d": "The shift register"
+   }
+  },
+  "53": {
+   "question": "Which terminal, present in both the While Loop and the For Loop, indicates the current iteration number, starting at zero?",
+   "explanation": "The 'i' terminal returns the index of the current iteration, starting at 0 on the first iteration and incrementing on each pass of the loop.",
+   "options": {
+    "a": "The 'i' terminal (iteration counter)",
+    "b": "The 'N' terminal",
+    "c": "The conditional terminal",
+    "d": "The shift register"
+   }
+  },
+  "54": {
+   "question": "By default, how is the conditional terminal of a newly created While Loop configured in LabVIEW?",
+   "explanation": "By default, a newly created While Loop uses 'Stop if True': the loop stops on the iteration where the conditional terminal receives TRUE.",
+   "options": {
+    "a": "As 'Stop if True'",
+    "b": "As 'Continue if True'",
+    "c": "As 'Stop if False'",
+    "d": "It has no default configuration and must be chosen"
+   }
+  },
+  "55": {
+   "question": "If the conditional terminal of a While Loop is configured as 'Continue if True' and is wired directly to a FALSE constant, what happens?",
+   "explanation": "With 'Continue if True', the loop continues as long as it receives TRUE; if the input is a FALSE constant, the stop condition is met immediately after the first iteration.",
+   "options": {
+    "a": "The loop executes exactly once and then stops",
+    "b": "The loop runs indefinitely and never stops",
+    "c": "The VI cannot compile (broken VI)",
+    "d": "The loop does not execute at all"
+   }
+  },
+  "56": {
+   "question": "Which of the following statements about a For Loop is correct?",
+   "explanation": "The number of iterations of a For Loop is determined by the value wired to its N terminal before the loop starts executing (or by auto-indexing of an input array).",
+   "options": {
+    "a": "A For Loop always executes a predefined number of iterations, determined before loop execution begins",
+    "b": "A For Loop can run an indefinite number of times regardless of the value of N",
+    "c": "A For Loop can never have a conditional terminal",
+    "d": "A For Loop does not accept input tunnels"
+   }
+  },
+  "57": {
+   "question": "Besides the count terminal N, what other way exists in modern LabVIEW versions to determine the number of iterations of a For Loop without wiring N explicitly?",
+   "explanation": "If an array is connected to the For Loop input with auto-indexing enabled, the loop runs as many iterations as the array has elements, with no need to wire N.",
+   "options": {
+    "a": "Connect an array to an input tunnel with auto-indexing enabled; the number of iterations matches the number of elements in the array",
+    "b": "Use a shift register exclusively",
+    "c": "Type the number directly into the loop icon",
+    "d": "It is not possible; N must always be wired manually"
+   }
+  },
+  "58": {
+   "question": "A For Loop can optionally include a conditional terminal (added by right-clicking > 'Conditional Terminal'). What effect does this have?",
+   "explanation": "By adding a conditional terminal to a For Loop, it can stop before reaching N iterations if the stop condition is met, combining the behavior of both loops.",
+   "options": {
+    "a": "It lets the For Loop finish before completing the N iterations if the stop condition is met",
+    "b": "It automatically turns the For Loop into a While Loop, removing the N terminal",
+    "c": "It makes the loop ignore the value of N entirely",
+    "d": "It can only be used if the loop has no shift registers"
+   }
+  },
+  "59": {
+   "question": "A For Loop has its N terminal wired with the value 5 and, in addition, an input tunnel with auto-indexing connected to a 3-element array. How many iterations will the loop execute?",
+   "explanation": "When N and array auto-indexing determine different iteration counts, LabVIEW executes the smaller of the two values to avoid reading past the bounds of the array.",
+   "options": {
+    "a": "3, because LabVIEW uses the smaller of N and the size of the indexed array",
+    "b": "5, because N always takes priority over the array size",
+    "c": "8, because LabVIEW adds both values together",
+    "d": "The VI breaks and cannot run"
+   }
+  },
+  "60": {
+   "question": "Which element must be added to a While Loop in order to stop it in a controlled way during execution?",
+   "explanation": "To stop a While Loop in a controlled way (for example with a 'Stop' button), a Boolean control is wired to the loop's conditional terminal.",
+   "options": {
+    "a": "A Boolean control wired to the conditional terminal",
+    "b": "A numeric indicator wired to the i terminal",
+    "c": "A mandatory shift register",
+    "d": "A Formula Node"
+   }
+  },
+  "61": {
+   "question": "What is a Shift Register used for in a loop (While Loop or For Loop)?",
+   "explanation": "The Shift Register makes a value calculated in one iteration available as an input in the next iteration, enabling cumulative calculations such as running totals or counters.",
+   "options": {
+    "a": "To pass the value of a variable from the end of one iteration to the start of the next",
+    "b": "To count the total number of iterations executed",
+    "c": "To stop the loop automatically after a given time",
+    "d": "To convert numeric data to Boolean"
+   }
+  },
+  "62": {
+   "question": "Where are the two halves of a Shift Register located graphically on the border of a loop?",
+   "explanation": "The right terminal of the Shift Register stores the value at the end of each iteration, and the left terminal delivers it as input at the start of the next iteration.",
+   "options": {
+    "a": "One on the left border (input to the next iteration) and one on the right border (output value of the current iteration)",
+    "b": "Both on the top border of the loop",
+    "c": "Both on the bottom border of the loop",
+    "d": "One inside the loop and one outside the block diagram"
+   }
+  },
+  "63": {
+   "question": "What value does a Shift Register take on the first iteration of a loop if no initial value is explicitly wired to the left terminal (outside the loop)?",
+   "explanation": "If not explicitly initialized, the Shift Register uses the data type's default value on the first run, although the recommended practice is always to initialize it explicitly to avoid dependencies on previous runs.",
+   "options": {
+    "a": "The default value of the data type (for example 0 for numerics) or the last value from a previous run, depending on the configuration",
+    "b": "Always a run-time error",
+    "c": "Always the maximum representable value of the data type",
+    "d": "A random value on each run"
+   }
+  },
+  "64": {
+   "question": "What is a 'Feedback Node' in LabVIEW and how does it mainly differ from a Shift Register?",
+   "explanation": "The Feedback Node appears automatically when the output of a function is connected back to its own input inside a loop, and serves a purpose equivalent to a single-stage Shift Register.",
+   "options": {
+    "a": "It is a node that serves a similar purpose to the Shift Register (passing data between iterations) but is added automatically when you wire the output of a node back to its own input inside a loop",
+    "b": "It is a function exclusively for error handling",
+    "c": "It is a type of obsolete sequence structure",
+    "d": "It is a node that only works with arrays"
+   }
+  },
+  "65": {
+   "question": "A Shift Register can be configured with multiple additional terminals on the left border (right-click > Add Element). What is this functionality for?",
+   "explanation": "By adding extra terminals to the left of a Shift Register, each one stores the value from a different earlier iteration, making it possible to access, for example, the value from two iterations back.",
+   "options": {
+    "a": "To access values from iterations earlier than the immediately previous one (for example, two or three iterations ago)",
+    "b": "To automatically increase the number of loop iterations",
+    "c": "To convert the loop into a Case Structure",
+    "d": "To allow multiple simultaneous stop conditions"
+   }
+  },
+  "66": {
+   "question": "If you need to compute a running total of the values generated on each iteration of a For Loop, which element is most appropriate for storing the accumulated value between iterations?",
+   "explanation": "The Shift Register is the natural tool for maintaining and updating an accumulated value (such as a sum) across successive iterations of a loop.",
+   "options": {
+    "a": "A Shift Register",
+    "b": "A tunnel with auto-indexing",
+    "c": "The N terminal",
+    "d": "The conditional terminal"
+   }
+  },
+  "67": {
+   "question": "Which structure executes one of several alternative subdiagrams depending on the value of a selector?",
+   "explanation": "The Case Structure evaluates the value wired to its selector terminal and executes only the subdiagram ('case') corresponding to that value.",
+   "options": {
+    "a": "Case Structure",
+    "b": "Sequence Structure",
+    "c": "While Loop",
+    "d": "Formula Node"
+   }
+  },
+  "68": {
+   "question": "Which data types can be connected to the selector of a Case Structure?",
+   "explanation": "The selector of a Case Structure accepts discrete types such as Boolean, integer numeric, string and enum; it does not directly accept types such as arrays or complete clusters.",
+   "options": {
+    "a": "Boolean, integer, string or enum, among other discrete types",
+    "b": "Boolean only",
+    "c": "Arrays only",
+    "d": "Any data type, including complete clusters"
+   }
+  },
+  "69": {
+   "question": "When the selector of a Case Structure is Boolean, how many cases does the structure have by default?",
+   "explanation": "With a Boolean selector, the Case Structure automatically generates exactly two cases: True and False.",
+   "options": {
+    "a": "Two: True and False",
+    "b": "Only one",
+    "c": "Three: True, False and Default",
+    "d": "It depends on the number of possible enum values"
+   }
+  },
+  "70": {
+   "question": "When the selector of a Case Structure is an integer (numeric) and cases have not been defined for every possible value, what is mandatory to include?",
+   "explanation": "With numeric or string selectors, because the range of possible values is potentially unbounded, LabVIEW requires (or strongly recommends) defining a Default case for values not explicitly specified.",
+   "options": {
+    "a": "A 'Default' case that handles any value not explicitly covered",
+    "b": "A case named 'Error', mandatorily",
+    "c": "Nothing; LabVIEW silently ignores values not covered",
+    "d": "An additional Shift Register"
+   }
+  },
+  "71": {
+   "question": "What happens to the subdiagrams of a Case Structure that do NOT correspond to the current selector value?",
+   "explanation": "Only the subdiagram corresponding to the value received at the selector executes; the remaining cases are neither evaluated nor executed on that pass.",
+   "options": {
+    "a": "They do not execute at all during that execution of the structure",
+    "b": "They execute in parallel with the selected case",
+    "c": "They execute after the selected case, in the background",
+    "d": "They generate a run-time error"
+   }
+  },
+  "72": {
+   "question": "What happens if an output tunnel of a Case Structure is not wired in ALL of the defined cases?",
+   "explanation": "By dataflow, each output tunnel must receive a defined value in every case; if it is missing in any of them, LabVIEW breaks the VI unless it is explicitly configured to use a default value when unwired.",
+   "options": {
+    "a": "LabVIEW flags a wiring error (broken VI) until the output is wired in every case, or the 'Use Default If Unwired' option is used",
+    "b": "LabVIEW automatically uses zero for all cases with no configuration needed",
+    "c": "The VI runs correctly, ignoring the unwired cases",
+    "d": "It only generates a warning, without preventing execution"
+   }
+  },
+  "73": {
+   "question": "When using an enum as the selector of a Case Structure, how are the different cases usually identified on the top border of the structure?",
+   "explanation": "When the selector is an enum, the Case Structure shows on its top border the text names associated with each enum value, making the code easier to read.",
+   "options": {
+    "a": "By the text names (strings) associated with each enum value",
+    "b": "By numbers only, with no names",
+    "c": "By colors, with no text",
+    "d": "By mandatory custom icons"
+   }
+  },
+  "74": {
+   "question": "Which type of selector is commonly used in a Case Structure to handle different kinds of errors centrally within a VI?",
+   "explanation": "It is common to wire the Boolean status or the numeric code of an error cluster to the selector of a Case Structure, in order to run conditional error handling depending on whether an error occurred.",
+   "options": {
+    "a": "A selector based on the error cluster (using the error code or its Boolean status)",
+    "b": "An array selector",
+    "c": "A complete, unbundled cluster selector",
+    "d": "A waveform selector"
+   }
+  },
+  "75": {
+   "question": "You have a Case Structure with an integer selector and cases defined for 0, 1, 2 and 'Default'. If at run time the selector receives the value -1, which case executes?",
+   "explanation": "Any integer value that does not match an explicit case (including negative values) is caught by the Default case, which acts as the general handler for values not covered.",
+   "options": {
+    "a": "The Default case",
+    "b": "A run-time error occurs and the VI stops",
+    "c": "Case 0, because it is the closest",
+    "d": "No case executes and the VI waits indefinitely"
+   }
+  },
+  "76": {
+   "question": "Which visual element lets you switch from one case to another inside the Case Structure editor without changing the value wired to the selector?",
+   "explanation": "On the top border of the Case Structure, the arrows and the case name let you navigate visually between the different subdiagrams while editing, without affecting the actual selector value at run time.",
+   "options": {
+    "a": "The case selection arrows (or the drop-down menu) on the top border of the structure",
+    "b": "The loop's i terminal",
+    "c": "The shift register",
+    "d": "The auto-indexing tunnel"
+   }
+  },
+  "77": {
+   "question": "What is the main purpose of a Sequence Structure (Flat or Stacked) in LabVIEW?",
+   "explanation": "The Sequence Structure forces its frames to execute in a strictly sequential order, useful when you need to force a timing dependency without a data dependency.",
+   "options": {
+    "a": "To force a sequential execution order between blocks of code that would otherwise have no data dependency on each other",
+    "b": "To repeat a block of code a fixed number of times",
+    "c": "To execute code conditionally based on a Boolean value",
+    "d": "To group data of different types into a single variable"
+   }
+  },
+  "78": {
+   "question": "What is the main visual and functional difference between a Flat Sequence and a Stacked Sequence?",
+   "explanation": "The Flat Sequence displays all of its frames visible simultaneously on the diagram (executing from left to right), whereas the Stacked Sequence stacks them like tabs, showing one frame at a time.",
+   "options": {
+    "a": "The Flat Sequence shows all of its frames side by side on the diagram, whereas the Stacked Sequence stacks them and shows only one at a time",
+    "b": "The Flat Sequence accepts only one frame, whereas the Stacked one accepts multiple",
+    "c": "The Stacked Sequence does not allow data to be passed between frames, whereas the Flat one does",
+    "d": "There is no real difference between the two"
+   }
+  },
+  "79": {
+   "question": "In a Stacked Sequence Structure, which element is used to pass data from an earlier frame to a later frame?",
+   "explanation": "Sequence Locals carry a value generated in one frame to later frames within a Stacked Sequence, since those frames do not share the diagram visually the way a Flat Sequence does.",
+   "options": {
+    "a": "A Sequence Local",
+    "b": "A Shift Register",
+    "c": "An auto-indexing tunnel",
+    "d": "A Feedback Node"
+   }
+  },
+  "80": {
+   "question": "Why is excessive use of Sequence Structures generally considered bad practice in LabVIEW?",
+   "explanation": "Overusing sequences forces a strictly sequential order that can eliminate the natural parallelism of dataflow, and hides the real data dependencies, making the code harder to read and debug.",
+   "options": {
+    "a": "Because it hides the program's natural dataflow and can reduce the parallelism inherent to dataflow, making debugging harder",
+    "b": "Because LabVIEW does not allow more than one sequence to be nested",
+    "c": "Because sequences automatically consume all available RAM",
+    "d": "Because sequences cannot contain SubVIs"
+   }
+  },
+  "81": {
+   "question": "Which design alternative is frequently recommended instead of chaining multiple Sequence Structures to force an execution order?",
+   "explanation": "Chaining the error cluster creates a real data dependency between nodes, achieving the desired execution order without resorting to sequence structures and preserving the readability of the dataflow.",
+   "options": {
+    "a": "Use an explicit data dependency, such as chaining the error cluster between the VIs or functions involved",
+    "b": "Use global variables exclusively",
+    "c": "Duplicate the code in each frame",
+    "d": "Use only text comments on the diagram"
+   }
+  },
+  "82": {
+   "question": "What is the main purpose of an Event Structure in LabVIEW?",
+   "explanation": "The Event Structure lets the block diagram react to events (such as a button click or a value change) efficiently, instead of constantly polling the state of the controls.",
+   "options": {
+    "a": "To execute code in response to specific events, such as the user interacting with front panel controls",
+    "b": "To repeat code an indefinite number of times",
+    "c": "To completely replace the While Loop in any application",
+    "d": "To automatically convert numeric data into Boolean"
+   }
+  },
+  "83": {
+   "question": "Where is an Event Structure typically placed so that it can wait for and respond to multiple events continuously while the application runs?",
+   "explanation": "The Event Structure is normally placed inside a While Loop, so that after processing one event it goes back to waiting for the next, forming the pattern known as an 'Event-Driven State Machine' or user interface event handler.",
+   "options": {
+    "a": "Inside a While Loop",
+    "b": "Inside a For Loop with N fixed at 1",
+    "c": "Outside any loop, directly on the main diagram",
+    "d": "Inside a Formula Node"
+   }
+  },
+  "84": {
+   "question": "What is the main difference between a 'Notify' event and a 'Filter' event in the Event Structure?",
+   "explanation": "Filter events (identified by a '?' in their name) fire before the event completes and allow the action to be modified or cancelled, whereas Notify events simply report that the event has already happened.",
+   "options": {
+    "a": "Filter events let you examine and modify (or even discard) the event data before the event happens, whereas Notify events only report that the event has already occurred",
+    "b": "Notify events only work with Boolean controls",
+    "c": "Filter events cannot be used with front panel controls",
+    "d": "There is no functional difference between the two"
+   }
+  },
+  "85": {
+   "question": "What happens if, inside a While Loop, there is no Event Structure and the code relies on constantly polling a control's value to detect changes?",
+   "explanation": "Continuously polling a value consumes CPU resources on every loop iteration, whereas an Event Structure lets the VI stay idle until an event actually occurs, which is more efficient.",
+   "options": {
+    "a": "The processor consumes cycles unnecessarily on every iteration (polling), which is less efficient than using an Event Structure",
+    "b": "LabVIEW automatically generates a compile error",
+    "c": "The control stops working after the first read",
+    "d": "It is the only valid way to detect changes in a control"
+   }
+  },
+  "86": {
+   "question": "Inside an Event Structure with multiple event cases configured, if the user interacts with two different controls almost simultaneously, how does LabVIEW process those events?",
+   "explanation": "The Event Structure maintains an internal event queue; even if events occur almost simultaneously, each is processed sequentially, one at a time, in the order they were generated.",
+   "options": {
+    "a": "It places them in an internal queue and processes them one at a time, in the order they occurred",
+    "b": "It always processes them in parallel within the same case",
+    "c": "It ignores all events except the first",
+    "d": "It generates an error because it can only process one event per run of the VI"
+   }
+  },
+  "87": {
+   "question": "What is a Formula Node used for primarily in LabVIEW?",
+   "explanation": "The Formula Node lets you write formulas and mathematical expressions with C-like syntax directly on the block diagram, useful for complex equations that would be tedious to wire graphically.",
+   "options": {
+    "a": "To write mathematical expressions and complex algorithms using C-like text-based syntax, instead of wiring multiple graphical functions",
+    "b": "To create Boolean controls automatically",
+    "c": "To completely replace the block diagram with text code",
+    "d": "To define the connector pane of a SubVI"
+   }
+  },
+  "88": {
+   "question": "How are the input and output variables of a Formula Node declared?",
+   "explanation": "The input and output terminals of a Formula Node are added manually on its border (right-click > Add Input/Add Output) and are used by name inside the text expressions.",
+   "options": {
+    "a": "They are added as terminals on the border of the structure by right-clicking, and then referenced by name inside the text code",
+    "b": "They are declared automatically based on the number of lines of code",
+    "c": "Only global variables predefined by LabVIEW can be used",
+    "d": "Variables cannot be declared; only constants"
+   }
+  },
+  "89": {
+   "question": "Which character is used to terminate each statement inside a Formula Node, similarly to text-based languages such as C?",
+   "explanation": "As in C, each statement inside a Formula Node must end with a semicolon (;) to be syntactically valid.",
+   "options": {
+    "a": "The semicolon (;)",
+    "b": "The comma (,)",
+    "c": "The colon (:)",
+    "d": "The exclamation mark (!)"
+   }
+  },
+  "90": {
+   "question": "In which scenario is it more appropriate to use a Formula Node instead of wiring individual graphical math functions?",
+   "explanation": "The Formula Node is especially useful for long or complex mathematical expressions, where writing the formula as text is more compact and readable than building it from multiple wired graphical functions.",
+   "options": {
+    "a": "When you need to implement a long or complex mathematical formula, with multiple nested operations, that would be hard to read if wired graphically",
+    "b": "When you only need to add two simple integers",
+    "c": "When you need to handle Boolean data exclusively",
+    "d": "When you need to create an Enum control"
+   }
+  },
+  "91": {
+   "question": "What is an array in LabVIEW?",
+   "explanation": "An array groups multiple elements of the SAME data type (for example, all numeric) into an ordered structure, indexed from 0.",
+   "options": {
+    "a": "An ordered collection of elements of the same data type, accessible by an index",
+    "b": "A collection of elements of different data types, accessible by name",
+    "c": "A conditional flow control structure",
+    "d": "A file type used exclusively for saving data to disk"
+   }
+  },
+  "92": {
+   "question": "At which number does indexing of array elements begin in LabVIEW?",
+   "explanation": "As in most programming languages, arrays in LabVIEW are indexed starting at 0 for the first element.",
+   "options": {
+    "a": "0",
+    "b": "1",
+    "c": "-1",
+    "d": "It depends on the array's data type"
+   }
+  },
+  "93": {
+   "question": "Which function is used to assemble individual elements or concatenate several arrays into a single array?",
+   "explanation": "Build Array lets you construct a new array from scalar elements and/or concatenate several existing arrays into one.",
+   "options": {
+    "a": "Build Array",
+    "b": "Index Array",
+    "c": "Array Size",
+    "d": "Initialize Array"
+   }
+  },
+  "94": {
+   "question": "Which function returns the number of elements an array contains?",
+   "explanation": "Array Size returns an integer (or an array of integers, in the case of multidimensional arrays) with the number of elements in the input array.",
+   "options": {
+    "a": "Array Size",
+    "b": "Index Array",
+    "c": "Build Array",
+    "d": "Array Max & Min"
+   }
+  },
+  "95": {
+   "question": "Which function is used to extract a single element from an array based on its index?",
+   "explanation": "Index Array extracts the element at the position given by the input index, or a subset if configured to extract a subarray.",
+   "options": {
+    "a": "Index Array",
+    "b": "Array Size",
+    "c": "Build Array",
+    "d": "Replace Array Subset"
+   }
+  },
+  "96": {
+   "question": "Which function is used to create an array of a given size and initial value, without having to wire element by element?",
+   "explanation": "Initialize Array creates an array of N elements, all with the same specified initial value, useful for preallocating arrays before filling them.",
+   "options": {
+    "a": "Initialize Array",
+    "b": "Build Array",
+    "c": "Array Size",
+    "d": "Array Subset"
+   }
+  },
+  "97": {
+   "question": "Which function extracts a contiguous portion (subset) of an array, starting at a given index and with a given length?",
+   "explanation": "Array Subset returns a portion of the original array, starting at the given index and with the specified length.",
+   "options": {
+    "a": "Array Subset",
+    "b": "Index Array (scalar mode)",
+    "c": "Build Array",
+    "d": "Search 1D Array"
+   }
+  },
+  "98": {
+   "question": "Which function replaces one or more elements of an existing array with new values, at a given position?",
+   "explanation": "Replace Array Subset replaces elements of the original array starting at a given index, without changing the total size of the array (unless it is replaced with a portion of a different size).",
+   "options": {
+    "a": "Replace Array Subset",
+    "b": "Build Array",
+    "c": "Delete From Array",
+    "d": "Array Subset"
+   }
+  },
+  "99": {
+   "question": "Which function swaps rows for columns (and vice versa) in a two-dimensional array?",
+   "explanation": "Transpose 2D Array swaps the rows and columns of a two-dimensional array, producing its transposed matrix.",
+   "options": {
+    "a": "Transpose Array",
+    "b": "Reverse 1D Array",
+    "c": "Rotate 1D Array",
+    "d": "Sort 1D Array"
+   }
+  },
+  "100": {
+   "question": "What is 'auto-indexing' in the context of a loop (For Loop or While Loop)?",
+   "explanation": "Auto-indexing lets an output tunnel of a loop automatically build an array from the values generated on each iteration, or lets an input tunnel deliver a different element of the array on each iteration.",
+   "options": {
+    "a": "The process by which an output tunnel automatically accumulates the values from each iteration into an array, or an input tunnel extracts elements one by one from an array",
+    "b": "A mechanism for automatically sorting an array from highest to lowest",
+    "c": "A control structure type exclusive to arrays",
+    "d": "A method for removing duplicates from an array"
+   }
+  },
+  "101": {
+   "question": "In a For Loop, what happens by default with an output tunnel to which a scalar value generated on each iteration is connected?",
+   "explanation": "In a For Loop, auto-indexing on output tunnels is enabled by default: each value generated on an iteration is automatically appended to an output array.",
+   "options": {
+    "a": "Auto-indexing is enabled by default, so the tunnel accumulates the values into an array",
+    "b": "Auto-indexing is disabled by default, so only the last value is kept",
+    "c": "LabVIEW generates an error because tunnels do not support auto-indexing in For Loops",
+    "d": "Auto-indexing is only possible if the value is Boolean"
+   }
+  },
+  "102": {
+   "question": "In a While Loop, what happens by default with auto-indexing on output tunnels, in contrast to the For Loop?",
+   "explanation": "Unlike the For Loop, in a While Loop auto-indexing on outputs is disabled by default (since the number of iterations is not known in advance); it can be enabled manually by right-clicking the tunnel.",
+   "options": {
+    "a": "Auto-indexing is disabled by default; the tunnel keeps only the last value generated unless it is enabled manually",
+    "b": "Auto-indexing is enabled by default, just as in the For Loop",
+    "c": "The While Loop does not allow output tunnels",
+    "d": "The While Loop always requires Shift Registers in order to have outputs"
+   }
+  },
+  "103": {
+   "question": "A For Loop has the value 4 wired to its N terminal, and inside it generates scalar values connected to an output tunnel with auto-indexing enabled. How many elements will the resulting array outside the loop have?",
+   "explanation": "With auto-indexing enabled on the output, the final array contains exactly one element per iteration executed; with N=4, the resulting array will have 4 elements.",
+   "options": {
+    "a": "4 elements, one for each iteration executed",
+    "b": "1 element, the last one generated",
+    "c": "0 elements, because the loop cannot produce arrays",
+    "d": "An indeterminate number, different on each run"
+   }
+  },
+  "104": {
+   "question": "Which type of array is shown in LabVIEW with two indexes inside the control's display (row and column)?",
+   "explanation": "A two-dimensional array is shown on the front panel with two index fields: one for the row and one for the column.",
+   "options": {
+    "a": "A two-dimensional (2D) array",
+    "b": "A one-dimensional (1D) array",
+    "c": "A cluster",
+    "d": "A multidimensional enum"
+   }
+  },
+  "105": {
+   "question": "What is the fundamental restriction on the data types that can be stored inside a single array in LabVIEW?",
+   "explanation": "Unlike a cluster, an array requires all of its elements to be homogeneous, that is, of exactly the same data type.",
+   "options": {
+    "a": "All elements of the array must be of the same data type",
+    "b": "Elements can be of any data type, freely mixed",
+    "c": "Only numeric types are allowed inside an array",
+    "d": "Only Booleans are allowed inside an array"
+   }
+  },
+  "106": {
+   "question": "Which function finds the maximum and minimum value within a numeric array, along with their indexes?",
+   "explanation": "Array Max & Min scans the array and returns both the maximum and minimum values found, along with the position (index) where each one is located.",
+   "options": {
+    "a": "Array Max & Min",
+    "b": "Sort 1D Array",
+    "c": "Array Size",
+    "d": "Search 1D Array"
+   }
+  },
+  "107": {
+   "question": "Which function finds the first position at which a given value appears within a one-dimensional array?",
+   "explanation": "Search 1D Array looks for a specific element within the array and returns the index of its first occurrence, or -1 if it is not found.",
+   "options": {
+    "a": "Search 1D Array",
+    "b": "Array Max & Min",
+    "c": "Sort 1D Array",
+    "d": "Index Array"
+   }
+  },
+  "108": {
+   "question": "What happens if you use Index Array with an index greater than or equal to the size of the array (out of range)?",
+   "explanation": "Accessing an out-of-range index with Index Array does not generate a fatal run-time error; instead, LabVIEW returns the default value of the corresponding data type (for example, 0 for numerics).",
+   "options": {
+    "a": "LabVIEW returns the default value of the array's data type, without generating a run-time error that stops the VI",
+    "b": "LabVIEW immediately stops execution of the VI with a critical error",
+    "c": "The VI cannot compile",
+    "d": "LabVIEW automatically clamps the index to the last valid value"
+   }
+  },
+  "109": {
+   "question": "Which of the following is a good reason to prefer an array over creating multiple individual controls/variables for similar data?",
+   "explanation": "Using an array makes it easier to process collections of data of the same type with loops and specialized functions (Build Array, Index Array, and so on), instead of duplicating code for each individual variable.",
+   "options": {
+    "a": "It allows a set of homogeneous data to be processed uniformly and scalably using loops and array functions",
+    "b": "Arrays always use less memory than any individual variable, without exception",
+    "c": "Arrays are mandatory in order to use SubVIs",
+    "d": "An array cannot be traversed with a loop"
+   }
+  },
+  "110": {
+   "question": "Which visual representation identifies an array control or indicator on the Front Panel?",
+   "explanation": "On the Front Panel, an array is shown as a container with an index box on the left and, inside it, the 'template' element that defines the data type of all the array's elements.",
+   "options": {
+    "a": "A container with a numeric index on its left border and a template element inside",
+    "b": "A container with colored tabs",
+    "c": "A clock-shaped icon",
+    "d": "A gray-background container with no borders"
+   }
+  },
+  "111": {
+   "question": "A 2-element array is connected to the input tunnel of a For Loop with auto-indexing enabled, and in addition the N terminal is wired with the value 5. What happens when the loop runs?",
+   "explanation": "When there is a conflict between N and the size of an auto-indexed array, LabVIEW always honours the smaller of the two values to avoid out-of-range access.",
+   "options": {
+    "a": "The loop executes only 2 iterations, since LabVIEW uses the smaller of N and the size of the auto-indexed array",
+    "b": "The loop executes 5 iterations, generating an error when it tries to read the non-existent third element",
+    "c": "The loop executes 7 iterations, adding both values together",
+    "d": "The VI cannot compile in this scenario"
+   }
+  },
+  "112": {
+   "question": "Which function is used to remove one or more elements from an array starting at a given index?",
+   "explanation": "Delete From Array removes one or more elements from an array starting at the given position, returning the resulting array without those elements.",
+   "options": {
+    "a": "Delete From Array",
+    "b": "Replace Array Subset",
+    "c": "Build Array",
+    "d": "Array Subset"
+   }
+  },
+  "113": {
+   "question": "Which function is used to insert one or more elements into an existing array at a specific position?",
+   "explanation": "Insert Into Array adds one or more new elements into an existing array, at the given position, shifting the following elements.",
+   "options": {
+    "a": "Insert Into Array",
+    "b": "Build Array",
+    "c": "Replace Array Subset",
+    "d": "Index Array"
+   }
+  },
+  "114": {
+   "question": "Which of the following options correctly describes an empty array in LabVIEW?",
+   "explanation": "An empty array is perfectly valid in LabVIEW: it is an array whose size (Array Size) is 0, with no elements, but which retains its base data type.",
+   "options": {
+    "a": "A valid array that exists but has zero elements (size 0)",
+    "b": "A data type error",
+    "c": "An array that can only contain Booleans",
+    "d": "An array that necessarily contains one element with a NULL value"
+   }
+  },
+  "115": {
+   "question": "Which function sorts the elements of a one-dimensional array from lowest to highest?",
+   "explanation": "Sort 1D Array reorders the elements of the input array in ascending order, returning a new sorted array.",
+   "options": {
+    "a": "Sort 1D Array",
+    "b": "Search 1D Array",
+    "c": "Array Max & Min",
+    "d": "Reverse 1D Array"
+   }
+  },
+  "116": {
+   "question": "When you resize an array indicator on the Front Panel to show more than one element, what is being modified?",
+   "explanation": "Enlarging an array indicator on the front panel only changes how many elements are visible at once; it does not alter the actual contents or the logical size of the array in memory.",
+   "options": {
+    "a": "Only the view/display of the array, not its actual contents or its logical size",
+    "b": "The actual logical size of the array, adding new empty elements",
+    "c": "The array's data type",
+    "d": "The order of the array's elements"
+   }
+  },
+  "117": {
+   "question": "You have a 2D array of 3 rows by 4 columns. When you apply the Array Size function to this array, what does the function return?",
+   "explanation": "For multidimensional arrays, Array Size returns a 1D array where each element gives the size of one dimension (in this case, 3 rows and 4 columns).",
+   "options": {
+    "a": "A two-element array: {3, 4}, representing the number of rows and columns",
+    "b": "A single integer: 12, the total number of elements",
+    "c": "A 12-element array, one per cell",
+    "d": "An error, because Array Size does not accept 2D arrays"
+   }
+  },
+  "118": {
+   "question": "What happens if an empty array (0 elements) is connected to the input tunnel of a For Loop with auto-indexing enabled, and no other value is wired to N?",
+   "explanation": "When auto-indexing determines the iteration count from an empty array, the For Loop executes zero iterations, since there are no elements to index.",
+   "options": {
+    "a": "The loop executes no iterations",
+    "b": "The loop executes exactly one iteration with a default value",
+    "c": "The loop runs indefinitely",
+    "d": "The VI breaks at compile time"
+   }
+  },
+  "119": {
+   "question": "Which of the following functions does NOT typically belong to the Array functions palette in LabVIEW?",
+   "explanation": "Bundle by Name belongs to the Cluster palette, not the Array palette; it is used to write cluster elements by name, not to manipulate arrays.",
+   "options": {
+    "a": "Bundle by Name",
+    "b": "Build Array",
+    "c": "Index Array",
+    "d": "Array Size"
+   }
+  },
+  "120": {
+   "question": "On a block diagram, what visually distinguishes a wire carrying an array from a wire carrying a scalar value of the same base type?",
+   "explanation": "LabVIEW increases the line thickness of wires carrying arrays compared with those carrying an equivalent scalar value, helping to visually identify the kind of data structure.",
+   "options": {
+    "a": "The array wire is drawn thicker (a heavier line) than the scalar one",
+    "b": "The array wire is always black",
+    "c": "The array wire flashes during execution",
+    "d": "There is no visual difference between the two"
+   }
+  },
+  "121": {
+   "question": "What is a cluster in LabVIEW?",
+   "explanation": "Unlike an array, a cluster can group elements of different data types (for example, a numeric together with a string and a Boolean) into a single unit of data.",
+   "options": {
+    "a": "A data structure that groups one or more elements of potentially different data types into a single terminal",
+    "b": "A collection of elements that must all be of the same data type",
+    "c": "A conditional flow control structure",
+    "d": "A specialized type of loop"
+   }
+  },
+  "122": {
+   "question": "What is the main difference between an array and a cluster with regard to the data types they can contain?",
+   "explanation": "Arrays are homogeneous (the same type in all elements), whereas clusters are heterogeneous and can combine, for example, a numeric, a string and a Boolean.",
+   "options": {
+    "a": "The array requires all of its elements to be of the same type, whereas the cluster accepts elements of different types",
+    "b": "The cluster requires all of its elements to be of the same type, whereas the array accepts different types",
+    "c": "Both require exactly the same data type in all of their elements",
+    "d": "Neither of the two allows data types to be mixed"
+   }
+  },
+  "123": {
+   "question": "Which property of the elements inside a cluster is essential for the Bundle and Unbundle functions (the unnamed ones)?",
+   "explanation": "The order of the elements within the cluster determines the position at which Bundle and Unbundle (positional) read or write each value; changing that order can break existing code.",
+   "options": {
+    "a": "The order in which they were added to the cluster",
+    "b": "The background color of the cluster",
+    "c": "The name of the cluster itself",
+    "d": "The amount of RAM available"
+   }
+  },
+  "124": {
+   "question": "Which function is used to create a cluster from individual elements, or to modify one or more elements of an existing cluster by position?",
+   "explanation": "Bundle assembles a new cluster from individual values, or modifies elements of an existing cluster wired to its input, referencing them by position.",
+   "options": {
+    "a": "Bundle",
+    "b": "Unbundle",
+    "c": "Build Array",
+    "d": "Index Array"
+   }
+  },
+  "125": {
+   "question": "Which function is used to extract all the individual elements of a cluster, in the order in which they were defined?",
+   "explanation": "Unbundle breaks a cluster into its individual elements, exposing each one as a separate output, in the cluster's positional order.",
+   "options": {
+    "a": "Unbundle",
+    "b": "Bundle",
+    "c": "Array Subset",
+    "d": "Index Array"
+   }
+  },
+  "126": {
+   "question": "What advantage do 'Bundle by Name' and 'Unbundle by Name' offer over the positional 'Bundle' and 'Unbundle'?",
+   "explanation": "Bundle by Name and Unbundle by Name let you select elements by name, which is more readable and more resilient to changes in the cluster's internal order, without having to handle every element at once.",
+   "options": {
+    "a": "They let you read or write a specific cluster element by referencing it by name, without depending on positional order or having to connect every element",
+    "b": "They are faster at run time in all cases",
+    "c": "They only work with clusters that contain Booleans",
+    "d": "They remove the need to define a data type for the cluster"
+   }
+  },
+  "127": {
+   "question": "What requirement must all the elements of a cluster meet in order to use 'Bundle by Name' and 'Unbundle by Name'?",
+   "explanation": "To reference elements by name with Bundle/Unbundle by Name, each control or indicator inside the cluster must have a label assigned and visible.",
+   "options": {
+    "a": "Each element must have a unique name (label) assigned within the cluster",
+    "b": "All elements must be of the same data type",
+    "c": "The cluster must contain exactly two elements",
+    "d": "The cluster must be empty when these functions are used"
+   }
+  },
+  "128": {
+   "question": "In which scenario is it more appropriate to use an error cluster instead of separately handling a status Boolean, a numeric code and a descriptive string?",
+   "explanation": "LabVIEW's standard error cluster groups 'status' (Boolean), 'code' (numeric) and 'source' (string) into a single unit of data, making it easy to propagate consistently between VIs.",
+   "options": {
+    "a": "When you need to carry the complete error status information (Boolean), code and description on a single wire, keeping everything grouped and in sync",
+    "b": "When the data is homogeneous and must be processed in a loop with auto-indexing",
+    "c": "When you need to store a long list of numeric values of the same type",
+    "d": "When error handling is not required in the VI"
+   }
+  },
+  "129": {
+   "question": "What are the three standard elements that make up LabVIEW's native error cluster?",
+   "explanation": "LabVIEW's standard error cluster contains: status (whether an error occurred, Boolean), code (the numeric error code) and source (a string describing where the error came from).",
+   "options": {
+    "a": "status (Boolean), code (numeric) and source (string)",
+    "b": "value, timestamp and unit",
+    "c": "name, type and size",
+    "d": "input, output and default"
+   }
+  },
+  "130": {
+   "question": "What is a 'Type Definition' (typedef) of a cluster (or of any data type) in LabVIEW?",
+   "explanation": "A Type Definition (typedef) is a reusable custom control saved as a .ctl file; when the definition is modified, all instances of the control across different VIs update automatically.",
+   "options": {
+    "a": "A custom, reusable data type saved as a .ctl file, which automatically propagates changes to every instance that uses it",
+    "b": "A cluster that can only be used within a single VI",
+    "c": "A file containing executable code exclusively",
+    "d": "A specialized loop type for processing clusters"
+   }
+  },
+  "131": {
+   "question": "What is the main difference between a normal Type Definition (Typedef) and a Strict Type Definition (Strict Typedef)?",
+   "explanation": "With a normal Typedef, each instance can customize the appearance (colors, size, and so on) while keeping the data structure in sync; with a Strict Typedef, even the visual appearance is locked and identical across all instances.",
+   "options": {
+    "a": "The Strict Typedef forces every instance to keep exactly the same visual appearance and properties (such as size), whereas the normal Typedef only propagates the data structure, allowing the appearance to be customized per instance",
+    "b": "The Strict Typedef cannot be used inside clusters",
+    "c": "The normal Typedef does not allow the control to be renamed",
+    "d": "There is no real difference between the two"
+   }
+  },
+  "132": {
+   "question": "What is the main benefit of using a Type Definition when working with a cluster used in many VIs of a large project?",
+   "explanation": "The main value of a typedef is the automatic propagation of structural changes to every instance of the data type in the project, which dramatically improves code maintenance.",
+   "options": {
+    "a": "If an element of the cluster needs to be added, removed or modified, the change propagates automatically to every VI that uses that typedef, without having to edit them one by one",
+    "b": "It halves the size of the final executable",
+    "c": "It lets the cluster contain elements of more than one type, which a normal cluster does not allow",
+    "d": "It completely removes the need to handle errors"
+   }
+  },
+  "133": {
+   "question": "If you change the ORDER of the elements inside a cluster already used in several VIs via positional 'Bundle' and 'Unbundle' (not 'by Name'), what risk do you run?",
+   "explanation": "Because positional Bundle and Unbundle depend on the internal order of the elements, changing that order can cause data to be read or written at the wrong position, producing silent logic errors.",
+   "options": {
+    "a": "Existing code may read or write the wrong value at each position, since positional Bundle/Unbundle depends strictly on order",
+    "b": "No risk; LabVIEW automatically adjusts all references by name",
+    "c": "The VI immediately stops compiling in all cases",
+    "d": "The data is automatically converted into an array"
+   }
+  },
+  "134": {
+   "question": "When is it more appropriate to use an array instead of a cluster to group data?",
+   "explanation": "Arrays are ideal when the number of elements can change dynamically and they all share the same data type; clusters are more appropriate for a fixed number of elements of potentially different types.",
+   "options": {
+    "a": "When the number of elements can vary dynamically and all of them are of the same data type",
+    "b": "When you need to mix different data types, such as a numeric and a string",
+    "c": "When the number of elements is fixed and known in advance, with heterogeneous types",
+    "d": "When you need to use Bundle by Name to access the elements"
+   }
+  },
+  "135": {
+   "question": "What happens if you try to wire a cluster directly to an array indicator (or vice versa)?",
+   "explanation": "Cluster and array are distinct data types and are incompatible for direct wiring; connecting one where the other is expected generates a wiring error that breaks the VI.",
+   "options": {
+    "a": "LabVIEW does not allow it; it generates a wiring error due to type incompatibility",
+    "b": "LabVIEW automatically converts the cluster into an array without warning",
+    "c": "LabVIEW allows it as long as the cluster has only one element",
+    "d": "LabVIEW ignores the data type and runs the VI anyway"
+   }
+  },
+  "136": {
+   "question": "Which function converts a cluster made up exclusively of numeric elements into an equivalent numeric array?",
+   "explanation": "Cluster to Array converts a homogeneous cluster (all of its elements of the same numeric type) into a 1D array with those same values, useful for applying array functions to them.",
+   "options": {
+    "a": "Cluster to Array",
+    "b": "Bundle",
+    "c": "Build Array",
+    "d": "Array to Cluster"
+   }
+  },
+  "137": {
+   "question": "Which function performs the inverse conversion, turning an array into a cluster with a specific number of elements?",
+   "explanation": "Array to Cluster converts a 1D array into a cluster, requiring the number of elements in the resulting cluster to be specified explicitly.",
+   "options": {
+    "a": "Array to Cluster",
+    "b": "Cluster to Array",
+    "c": "Build Array",
+    "d": "Bundle by Name"
+   }
+  },
+  "138": {
+   "question": "Which visual element identifies a cluster control or indicator on the Front Panel?",
+   "explanation": "A cluster is shown on the front panel as a container (with a distinctive border) that visually groups several controls or indicators of different types.",
+   "options": {
+    "a": "A container with a thick border (usually gray or colored) that groups several different controls/indicators inside it",
+    "b": "A container with a single numeric index box",
+    "c": "A circular-arrow-shaped icon",
+    "d": "A borderless free-text container"
+   }
+  },
+  "139": {
+   "question": "An error cluster is connected to the input of a Case Structure using 'Unbundle by Name' to extract the 'status' field as a Boolean selector. If status is TRUE (an error occurred), which common design pattern is being implemented?",
+   "explanation": "This is the standard LabVIEW error-handling pattern: extract 'status' from the error cluster and use it as the selector of a Case Structure so that error-handling logic runs only when appropriate.",
+   "options": {
+    "a": "Conditional error-handling execution, running recovery/logging code only when a previous error has occurred",
+    "b": "A state machine unrelated to error handling",
+    "c": "A Producer/Consumer pattern",
+    "d": "A VI reentrancy pattern"
+   }
+  },
+  "140": {
+   "question": "What happens if you add a new element to a cluster that is ALREADY a Type Definition used in several VIs of the project?",
+   "explanation": "One of the main advantages of Type Definitions is that any structural change (adding, removing or modifying elements) propagates automatically to every instance of the type in the project.",
+   "options": {
+    "a": "All instances of the cluster across the different VIs update automatically to include the new element",
+    "b": "Only the VI where the original change was made is updated",
+    "c": "A completely new cluster is generated, leaving the original unaffected",
+    "d": "LabVIEW asks you to create each instance manually, one by one"
+   }
+  },
+  "141": {
+   "question": "Which function is used to join two or more strings into one?",
+   "explanation": "Concatenate Strings joins two or more strings (or even arrays of strings) into a single resulting string, in the order in which the inputs are wired.",
+   "options": {
+    "a": "Concatenate Strings",
+    "b": "String Length",
+    "c": "Split String",
+    "d": "Match Pattern"
+   }
+  },
+  "142": {
+   "question": "Which function returns the number of characters a string contains?",
+   "explanation": "String Length returns an integer with the number of characters (bytes) contained in the input string.",
+   "options": {
+    "a": "String Length",
+    "b": "Array Size",
+    "c": "Concatenate Strings",
+    "d": "Match Pattern"
+   }
+  },
+  "143": {
+   "question": "Which function is used to build a formatted string by combining fixed text with values of different data types (numeric, Boolean, and so on), similar to a 'printf'?",
+   "explanation": "Format Into String lets you build an output string by combining literal text with values converted from other data types, using printf-like format specifiers.",
+   "options": {
+    "a": "Format Into String",
+    "b": "Scan From String",
+    "c": "Match Pattern",
+    "d": "String Subset"
+   }
+  },
+  "144": {
+   "question": "Which function performs the inverse operation of Format Into String, extracting values of different types from a string with a specific format?",
+   "explanation": "Scan From String parses an input string according to a format pattern and extracts the corresponding values, converting them to the specified data type (numeric, Boolean, and so on).",
+   "options": {
+    "a": "Scan From String",
+    "b": "Format Into String",
+    "c": "Concatenate Strings",
+    "d": "Search and Replace String"
+   }
+  },
+  "145": {
+   "question": "Which function converts a numeric value into its representation as a text string?",
+   "explanation": "There are specific conversion functions (such as Number to Decimal String) as well as Format Into String, for turning a numeric value into its textual representation.",
+   "options": {
+    "a": "Number to String (or Format Into String with a numeric format)",
+    "b": "Boolean to String",
+    "c": "String to Boolean",
+    "d": "Array to Cluster"
+   }
+  },
+  "146": {
+   "question": "Which function extracts a portion of a string starting at a given position and with a given length, analogously to Array Subset?",
+   "explanation": "String Subset extracts a substring from the original string, starting at the given index and with the specified number of characters.",
+   "options": {
+    "a": "String Subset",
+    "b": "Match Pattern",
+    "c": "Concatenate Strings",
+    "d": "Format Into String"
+   }
+  },
+  "147": {
+   "question": "Which function searches for and replaces a specific substring within a string with another?",
+   "explanation": "Search and Replace String locates a substring (or pattern) within a string and substitutes it with the specified replacement text.",
+   "options": {
+    "a": "Search and Replace String",
+    "b": "Match Pattern",
+    "c": "Scan From String",
+    "d": "String Subset"
+   }
+  },
+  "148": {
+   "question": "Which function splits a string into parts based on the first match of a text pattern or regular expression?",
+   "explanation": "Match Pattern finds the first match of a pattern within the string and splits it into three parts: before the pattern, the match itself, and after the pattern.",
+   "options": {
+    "a": "Match Pattern",
+    "b": "Concatenate Strings",
+    "c": "Format Into String",
+    "d": "String Length"
+   }
+  },
+  "149": {
+   "question": "Which special character is normally represented in LabVIEW by the escape sequence '\\n' when the '\\ Codes Display' mode is enabled on a string control?",
+   "explanation": "With escape code display enabled, '\\n' represents a line feed character within the string.",
+   "options": {
+    "a": "Line feed",
+    "b": "Tab",
+    "c": "Blank space",
+    "d": "Double quote"
+   }
+  },
+  "150": {
+   "question": "Which of the following is NOT a typical operation performed on strings in LabVIEW?",
+   "explanation": "Although characters do have an underlying ASCII/Unicode value, LabVIEW does not directly perform arithmetic operations such as 'mean' on a string without first explicitly converting it into an array of numeric values.",
+   "options": {
+    "a": "Directly computing the arithmetic mean of the characters as if they were a numeric array, without any prior conversion",
+    "b": "Concatenating two strings",
+    "c": "Searching for a substring within another",
+    "d": "Converting a string to upper or lower case"
+   }
+  },
+  "151": {
+   "question": "Which display mode of a string control lets you see and edit non-printable characters (such as line feeds or tabs) using sequences like '\\n' and '\\t'?",
+   "explanation": "The string control's '\\ Codes Display' mode shows non-printable characters as readable escape sequences (for example, \\n for a line feed), which is useful for debugging.",
+   "options": {
+    "a": "'\\ Codes Display'",
+    "b": "'Password Display'",
+    "c": "'Hex Display'",
+    "d": "'Normal Display'"
+   }
+  },
+  "152": {
+   "question": "Which display mode of a string control/indicator is appropriate for showing binary content in hexadecimal format, for example when communicating with instruments that send raw data?",
+   "explanation": "'Hex Display' mode shows each byte of the string as its hexadecimal representation, useful for inspecting raw binary data received from instruments or protocols.",
+   "options": {
+    "a": "'Hex Display'",
+    "b": "'Password Display'",
+    "c": "'Normal Display'",
+    "d": "'\\ Codes Display'"
+   }
+  },
+  "153": {
+   "question": "What is a string literal (string constant) on the block diagram, and what color is its border drawn in?",
+   "explanation": "Like string wires, string constants have a pink/magenta border, visually identifying their data type.",
+   "options": {
+    "a": "A fixed text constant, shown with a pink/magenta border, matching the color of the string data type",
+    "b": "A function that converts Booleans to text",
+    "c": "A type of conditional control structure",
+    "d": "A mandatory global variable"
+   }
+  },
+  "154": {
+   "question": "Format Into String is used with the format string '%d degrees %s' and an integer value (25) and a string ('Celsius') are wired to it. What would the expected result be?",
+   "explanation": "The %d specifier inserts the integer value formatted as a decimal and %s inserts the string as-is, respecting the order of the wired inputs: the result combines both values within the fixed text.",
+   "options": {
+    "a": "'25 degrees Celsius'",
+    "b": "'%d degrees %s'",
+    "c": "A run-time error due to incompatible types",
+    "d": "'degrees Celsius 25'"
+   }
+  },
+  "155": {
+   "question": "Which operation is most appropriate for checking whether a string contains a specific substring at any position, without needing to know its exact location?",
+   "explanation": "Match Pattern (or equivalent search functions) lets you determine whether a pattern/substring exists within a string, regardless of its exact position.",
+   "options": {
+    "a": "Use Match Pattern or Search and Replace String to detect the presence of the pattern",
+    "b": "Use String Length exclusively",
+    "c": "Use Build Array",
+    "d": "Use Bundle by Name"
+   }
+  },
+  "156": {
+   "question": "Which function converts a Boolean value into its string representation (for example 'TRUE' or 'FALSE')?",
+   "explanation": "LabVIEW offers specific conversion functions, such as Boolean to String, for turning a Boolean value into its equivalent textual representation.",
+   "options": {
+    "a": "Boolean to String (or Format Into String with %s applied after conversion)",
+    "b": "Number to String",
+    "c": "String Length",
+    "d": "Match Pattern"
+   }
+  },
+  "157": {
+   "question": "Why is it important to distinguish between the String data type and the Path data type in LabVIEW, even though both can display similar text?",
+   "explanation": "Although a Path may visually look like a text string, LabVIEW treats it as an independent data type, with its own cross-platform internal format, and explicit conversion functions are required to go from one to the other.",
+   "options": {
+    "a": "Because Path is its own data type with specific cross-platform formatting rules for file paths, distinct from a generic string",
+    "b": "Because a Path can never be converted to a string",
+    "c": "Because both are exactly the same data type internally",
+    "d": "Because String only accepts uppercase text"
+   }
+  },
+  "158": {
+   "question": "What is the main use of the 'Trim Whitespace' function on a string?",
+   "explanation": "Trim Whitespace removes leftover whitespace characters (spaces, tabs, line feeds) from the ends of a string, useful for cleaning up data read from files or instruments.",
+   "options": {
+    "a": "To remove leftover spaces, tabs and line feeds at the start and/or end of the string",
+    "b": "To convert all the text to uppercase",
+    "c": "To count the number of words in the string",
+    "d": "To concatenate two strings, discarding the second"
+   }
+  },
+  "159": {
+   "question": "What is a SubVI in LabVIEW?",
+   "explanation": "A SubVI is simply a VI called from the block diagram of another VI (the 'parent' VI), reusing its functionality as if it were a subroutine.",
+   "options": {
+    "a": "A VI used within the block diagram of another VI, working analogously to a subroutine or function",
+    "b": "A VI that can only run once per LabVIEW session",
+    "c": "A type of flow control structure",
+    "d": "A project configuration file"
+   }
+  },
+  "160": {
+   "question": "What are the two essential elements a VI must have in order to be used correctly as a SubVI?",
+   "explanation": "For a VI to work as a reusable SubVI, it needs its icon (graphical representation) and its connector pane (which exposes inputs and outputs) defined.",
+   "options": {
+    "a": "A configured icon and connector pane",
+    "b": "A shift register and a Formula Node",
+    "c": "An array and a cluster",
+    "d": "A Case Structure and a While Loop"
+   }
+  },
+  "161": {
+   "question": "What general steps are followed to convert a portion of existing block diagram code into a new SubVI?",
+   "explanation": "LabVIEW offers the 'Create SubVI' option (Edit > Create SubVI) which automatically encapsulates the selected code in a new VI, generating its basic icon and connector pane.",
+   "options": {
+    "a": "Select the desired code and use the 'Create SubVI' option from the Edit menu, which automatically encapsulates the selected code",
+    "b": "Manually copy each function to a blank VI, one by one, with no automatic tool",
+    "c": "Delete the code and rewrite it entirely in a new VI",
+    "d": "Use only the Project Explorer, without touching the block diagram"
+   }
+  },
+  "162": {
+   "question": "Which element of a SubVI, editable by double-clicking the icon in the upper-right corner of the front panel, lets you customize its graphical appearance?",
+   "explanation": "The Icon Editor opens by double-clicking the VI's icon and lets you design the graphical representation that will be shown when that VI is used as a SubVI.",
+   "options": {
+    "a": "The Icon Editor",
+    "b": "The Connector Pane Editor",
+    "c": "VI Properties",
+    "d": "The Project Explorer"
+   }
+  },
+  "163": {
+   "question": "What does the connector pane pattern chosen for a SubVI determine?",
+   "explanation": "The connector pane pattern defines how many terminals (and in what arrangement) will be available for assigning controls and indicators as inputs and outputs of the SubVI.",
+   "options": {
+    "a": "The number and geometric arrangement of input and output terminals available for wiring to the SubVI",
+    "b": "The color of the VI's icon",
+    "c": "The maximum number of times the SubVI can run",
+    "d": "The default data type of all the VI's controls"
+   }
+  },
+  "164": {
+   "question": "When configuring the connector pane of a SubVI, how is a front panel control assigned to a specific connector terminal?",
+   "explanation": "To assign a control to a terminal, you first click the desired terminal within the connector pane (the cursor changes to a wiring spool) and then click the corresponding control or indicator on the front panel.",
+   "options": {
+    "a": "By clicking the desired terminal on the connector pane and then clicking the corresponding control on the front panel",
+    "b": "By dragging the control directly onto the block diagram",
+    "c": "By typing the control's name into the VI's icon",
+    "d": "It happens automatically with no user involvement and no way to choose the terminal"
+   }
+  },
+  "165": {
+   "question": "What visually distinguishes, on the connector pane, a terminal already assigned to a control from one that has not yet been assigned?",
+   "explanation": "A connector pane terminal takes on the color associated with the data type of the control/indicator assigned to it; unassigned terminals stay white.",
+   "options": {
+    "a": "The assigned terminal shows the color of the corresponding data type, whereas an unassigned one appears white/gray",
+    "b": "There is no visual difference at all between the two states",
+    "c": "The assigned terminal flashes permanently",
+    "d": "The unassigned terminal is hidden automatically"
+   }
+  },
+  "166": {
+   "question": "Where do you write the general description of a VI and of each of its controls/indicators, which is then visible in Context Help?",
+   "explanation": "The general description is configured in File > VI Properties > Documentation, and that of each individual control/indicator in its properties window (Description and Tip); both are then visible in Context Help.",
+   "options": {
+    "a": "In the documentation properties of VI Properties and in the Description and Tip window of each control",
+    "b": "In the VI's file name",
+    "c": "In a free comment on the block diagram, only",
+    "d": "In the Project Explorer"
+   }
+  },
+  "167": {
+   "question": "What is the 'tip strip' of a control or indicator in LabVIEW?",
+   "explanation": "The tip strip is a short, configurable piece of text shown as a floating tooltip when the cursor hovers over a control or indicator, helping to quickly document its function.",
+   "options": {
+    "a": "A small pop-up text that appears when you hover the cursor over the object, showing a brief description of its purpose",
+    "b": "A toolbar exclusive to the connector pane",
+    "c": "A type of sequence structure",
+    "d": "A mandatory attachment for every VI"
+   }
+  },
+  "168": {
+   "question": "What is VI 'reentrancy' in LabVIEW?",
+   "explanation": "A reentrant VI allows several simultaneous calls to the same SubVI to run in parallel (for example, from different parallel loops), each keeping its own independent data state.",
+   "options": {
+    "a": "A setting that allows multiple instances of the same VI to run simultaneously, each with its own independent data memory",
+    "b": "A property exclusive to Boolean controls",
+    "c": "A step-by-step debugging mode",
+    "d": "A type of conditional control structure"
+   }
+  },
+  "169": {
+   "question": "By default, when a VI is NOT reentrant and is called simultaneously from two different places in parallel code, what happens?",
+   "explanation": "By default VIs are non-reentrant and share a single instance of memory; if they are called in parallel, one call must wait for the previous one to finish before starting, to avoid data conflicts.",
+   "options": {
+    "a": "One of the calls must wait for the other to finish, since they share the same data memory (non-reentrant behavior)",
+    "b": "Both calls run fully in parallel with no restriction",
+    "c": "LabVIEW generates a compile error when it detects parallel calls",
+    "d": "The VI automatically becomes reentrant for that run"
+   }
+  },
+  "170": {
+   "question": "What is one of the main advantages of splitting a large application into several SubVIs instead of one monolithic VI?",
+   "explanation": "Splitting code into SubVIs favours modularity, allows common functionality to be reused, makes individual testing easier, and improves the readability and overall maintenance of the application.",
+   "options": {
+    "a": "It improves modularity, reuse and maintainability of the code",
+    "b": "It automatically halves the program's execution time",
+    "c": "It completely removes the need to handle errors",
+    "d": "It prevents the code from being debugged"
+   }
+  },
+  "171": {
+   "question": "Which action lets you quickly open the block diagram of a SubVI from the block diagram of the VI that calls it?",
+   "explanation": "Double-clicking a SubVI's icon on the block diagram makes LabVIEW automatically open its front panel (from which its block diagram can be reached).",
+   "options": {
+    "a": "Double-click the SubVI's icon",
+    "b": "Right-click and select 'Delete'",
+    "c": "Press Ctrl+R",
+    "d": "Drag the icon off the diagram"
+   }
+  },
+  "172": {
+   "question": "Which standard connector pane geometric pattern is recommended when a SubVI has only 2 inputs and 2 outputs?",
+   "explanation": "LabVIEW offers several predefined connector patterns, and it is recommended to choose the one that best fits the actual number of inputs/outputs, avoiding unnecessarily large patterns such as the 28-terminal one.",
+   "options": {
+    "a": "A simple 4-terminal pattern (2x2)",
+    "b": "Always the 28-terminal pattern, regardless of how many are used",
+    "c": "A pattern with a single terminal only",
+    "d": "There is no need to choose a pattern if the VI has few connections"
+   }
+  },
+  "173": {
+   "question": "What happens if a terminal on a SubVI's connector pane is left unassigned to any control or indicator?",
+   "explanation": "An unassigned terminal on the connector pane simply stays inactive; it does not appear as an available input or output when that VI is used as a SubVI, although the VI can be saved and run normally.",
+   "options": {
+    "a": "That terminal is simply not available as a usable input/output when the SubVI is called",
+    "b": "The VI cannot be saved until all terminals are assigned",
+    "c": "LabVIEW automatically assigns a random value to that terminal",
+    "d": "The SubVI can no longer run independently"
+   }
+  },
+  "174": {
+   "question": "Which aspect of a SubVI's icon helps the user visually identify its function within a complex block diagram, without having to open it?",
+   "explanation": "A well-designed icon, with symbols or text representing the SubVI's function, makes it easy to quickly identify its purpose within large block diagrams.",
+   "options": {
+    "a": "A graphical design and/or descriptive text inside the icon",
+    "b": "The file name, which is always hidden in the icon",
+    "c": "The background color of the front panel",
+    "d": "The number of Boolean controls in the VI"
+   }
+  },
+  "175": {
+   "question": "A non-reentrant SubVI performs a calculation that takes 2 seconds. This SubVI is called twice in parallel from two independent branches of the main VI's block diagram. What is the approximate total execution time of both calls combined?",
+   "explanation": "Because it is not reentrant, both calls share the same data memory, so one must wait for the other to finish; the approximate total time is the sum of both executions (2+2=4 seconds).",
+   "options": {
+    "a": "Approximately 4 seconds, since the calls are serialized because they share the same memory instance",
+    "b": "Approximately 2 seconds, because both calls run in parallel without restriction",
+    "c": "Approximately 1 second, because LabVIEW automatically splits the load between the two calls",
+    "d": "It is indeterminate and depends solely on the hardware, unrelated to reentrancy"
+   }
+  },
+  "176": {
+   "question": "Which of the following options correctly describes the relationship between a Top-Level VI and its SubVIs?",
+   "explanation": "The Top-Level VI is the one the user runs directly; it can (and normally does) call SubVIs from its block diagram to structure the code modularly.",
+   "options": {
+    "a": "The top-level VI is the main VI that runs directly and that calls, within its block diagram, one or more SubVIs",
+    "b": "A top-level VI can never contain SubVIs",
+    "c": "A SubVI must always run independently, never inside another VI",
+    "d": "There is no difference between a top-level VI and a SubVI"
+   }
+  },
+  "177": {
+   "question": "Which of the following SubVI documentation practices is most useful for other developers who reuse it without seeing its internal code?",
+   "explanation": "Good documentation (a VI description, a description for each terminal, and a representative icon) lets other developers understand and correctly use the SubVI without having to inspect its internal block diagram.",
+   "options": {
+    "a": "Writing clear descriptions in VI Properties and on each control/indicator, together with a representative icon",
+    "b": "Naming the VI only with consecutive numbers, with no descriptive text",
+    "c": "Removing the default icon and leaving it blank",
+    "d": "Avoiding any documentation in order to save development time"
+   }
+  },
+  "178": {
+   "question": "What happens to the front panel of a SubVI when it is called from another VI in normal execution mode (with no pop-up window enabled)?",
+   "explanation": "By default, a SubVI's front panel is not shown during normal execution; it becomes visible only if that option is explicitly configured in the SubVI's window properties.",
+   "options": {
+    "a": "It generally stays hidden during execution, unless explicitly configured to be displayed",
+    "b": "It is always shown automatically in a pop-up window",
+    "c": "The SubVI cannot run if its front panel is hidden",
+    "d": "The calling VI closes automatically"
+   }
+  },
+  "179": {
+   "question": "Which shortcut-menu option on a SubVI icon lets you replace it with another VI that has a compatible connector pane?",
+   "explanation": "The 'Replace' option in a node's shortcut menu lets you substitute it with another compatible VI (or function), provided the connector pane is equivalent or compatible.",
+   "options": {
+    "a": "Replace",
+    "b": "Disconnect",
+    "c": "Convert to SubVI",
+    "d": "Retarget to Device"
+   }
+  },
+  "180": {
+   "question": "What is the standard file extension used to save a VI in LabVIEW?",
+   "explanation": "VIs (Virtual Instruments) are saved with the .vi extension, distinct from projects (.lvproj), custom controls (.ctl) or libraries (.lvlib).",
+   "options": {
+    "a": ".vi",
+    "b": ".lvproj",
+    "c": ".ctl",
+    "d": ".lvlib"
+   }
+  },
+  "181": {
+   "question": "If you need two inputs of a SubVI to be optional (the user may or may not wire them when calling it), which connector pane setting must be applied to those terminals?",
+   "explanation": "Each connector pane terminal can be configured as Required, Recommended or Optional; optional terminals can be left unwired when using the SubVI without generating an error.",
+   "options": {
+    "a": "Configure them as 'Optional' in the terminal's properties (This Connection Is)",
+    "b": "Configure them mandatorily as 'Required'",
+    "c": "Remove them from the connector pane entirely",
+    "d": "It is not possible to have optional inputs in a SubVI"
+   }
+  },
+  "182": {
+   "question": "Which part of the environment lets you see, in a single hierarchical view, which VIs are called by a given VI (its direct and indirect SubVIs)?",
+   "explanation": "The VI Hierarchy window shows a hierarchical tree of all the SubVIs (direct and indirect) a VI uses, useful for understanding the structure of a large application.",
+   "options": {
+    "a": "The 'VI Hierarchy' window (View > VI Hierarchy)",
+    "b": "The connector pane",
+    "c": "Context Help",
+    "d": "The Icon Editor"
+   }
+  },
+  "183": {
+   "question": "What is recommended before converting repeated code, which appears in several places in the same VI, into a reusable SubVI?",
+   "explanation": "Before encapsulating repeated code in a SubVI, it is worth making sure its behavior is consistent across all use cases and designing its inputs/outputs generally enough to cover them.",
+   "options": {
+    "a": "Verify that the logic really is equivalent in each case and generalize the inputs/outputs so the SubVI covers all intended uses",
+    "b": "Duplicate the code everywhere it is needed, avoiding creating a SubVI",
+    "c": "Remove the functionality from the places where it is not used identically",
+    "d": "Convert it directly into a global variable, without creating a SubVI"
+   }
+  },
+  "184": {
+   "question": "What does a broken arrow on a VI's Run button indicate?",
+   "explanation": "The broken arrow is the standard visual indicator that the VI contains edit-time errors (for example, incomplete or incompatible wiring) that prevent it from running.",
+   "options": {
+    "a": "That the VI has at least one edit-time error and cannot run until it is fixed",
+    "b": "That the VI is currently running",
+    "c": "That the VI has finished running successfully",
+    "d": "That the VI is in advanced debugging mode"
+   }
+  },
+  "185": {
+   "question": "Which action lets you see the detailed list of errors preventing a VI from running (when the broken arrow appears)?",
+   "explanation": "Clicking the broken Run arrow opens the Error List window, which details each edit-time error along with a brief description of its cause.",
+   "options": {
+    "a": "Click the broken arrow, which opens the 'Error List' window",
+    "b": "Press F5",
+    "c": "Save the VI under a different name",
+    "d": "Restart LabVIEW"
+   }
+  },
+  "186": {
+   "question": "Which debugging tool lets you watch, in real time and as an animation, how data flows through the block diagram during execution?",
+   "explanation": "Highlight Execution slows down the VI's execution and shows animations (bubbles) representing the flow of data along the wires, making the actual execution order easier to understand.",
+   "options": {
+    "a": "Highlight Execution",
+    "b": "Probe",
+    "c": "Breakpoint",
+    "d": "Step Into"
+   }
+  },
+  "187": {
+   "question": "Which debugging tool lets you view the value of data on a specific wire at the exact moment it passes through that point during execution?",
+   "explanation": "A Probe is placed on a wire and shows, in a pop-up window, the exact value of the data travelling through that point at each moment of execution.",
+   "options": {
+    "a": "Probe",
+    "b": "Highlight Execution",
+    "c": "Breakpoint",
+    "d": "Step Over"
+   }
+  },
+  "188": {
+   "question": "Which debugging tool automatically halts VI execution at a specific point on the block diagram, allowing the program state to be inspected at that instant?",
+   "explanation": "A Breakpoint pauses VI execution just before or after executing the node where it was placed, letting you examine values and continue step by step from there.",
+   "options": {
+    "a": "Breakpoint",
+    "b": "Probe",
+    "c": "Highlight Execution",
+    "d": "Context Help"
+   }
+  },
+  "189": {
+   "question": "Which tool is used to place a Breakpoint on a node, wire or structure of the block diagram?",
+   "explanation": "The Breakpoint tool, shown with an icon resembling a stop sign, is selected from the Tools palette and applied by clicking the diagram element where you want execution to pause.",
+   "options": {
+    "a": "The 'Set Breakpoint' tool from the Tools palette (stop-sign icon)",
+    "b": "The Labeling tool",
+    "c": "The Wiring tool",
+    "d": "The Icon Editor"
+   }
+  },
+  "190": {
+   "question": "What is the difference between 'Step Into', 'Step Over' and 'Step Out' when single-stepping through a VI that contains SubVIs?",
+   "explanation": "These three single-step execution controls let you navigate the call hierarchy while debugging: entering SubVIs (Step Into), stepping past them as a unit (Step Over), or leaving the current level (Step Out).",
+   "options": {
+    "a": "Step Into enters the SubVI's block diagram to debug it internally; Step Over runs the whole SubVI without entering it; Step Out leaves the current subdiagram and returns to the level above",
+    "b": "All three do exactly the same thing; only the button name changes",
+    "c": "Step Into stops the VI completely; Step Over restarts it; Step Out saves it",
+    "d": "Only Step Into is available when there are edit-time errors"
+   }
+  },
+  "191": {
+   "question": "What is the main difference between an edit-time error and a run-time error in LabVIEW?",
+   "explanation": "An edit-time error prevents the VI from compiling/running (it is fixed before running), whereas a run-time error arises while a valid VI is executing, typically propagated through the standard error cluster.",
+   "options": {
+    "a": "An edit-time error prevents the VI from running (broken arrow) due to wiring or syntax problems, whereas a run-time error occurs while running a VI that can in fact execute, generally reported through an error cluster",
+    "b": "Both types of error are exactly the same thing",
+    "c": "Edit-time errors only occur in SubVIs, never in the main VI",
+    "d": "A run-time error always immediately shuts down LabVIEW completely"
+   }
+  },
+  "192": {
+   "question": "Which standard LabVIEW VI is commonly used to show the user a dialog box describing an error that occurred, based on the error cluster?",
+   "explanation": "The Simple Error Handler VI examines an error cluster and, if there is an error, can automatically display a dialog box with the corresponding description to the user.",
+   "options": {
+    "a": "Simple Error Handler",
+    "b": "Merge Errors",
+    "c": "Build Array",
+    "d": "Format Into String"
+   }
+  },
+  "193": {
+   "question": "Which VI/function is used to combine several error clusters coming from parallel branches of code into a single output error cluster?",
+   "explanation": "Merge Errors combines several input error clusters into one, prioritizing reporting the first real error found among them.",
+   "options": {
+    "a": "Merge Errors",
+    "b": "Simple Error Handler",
+    "c": "Build Array",
+    "d": "Bundle"
+   }
+  },
+  "194": {
+   "question": "Which field of the error cluster indicates, with a Boolean value, whether an error actually occurred?",
+   "explanation": "The 'status' field of the error cluster is a Boolean: TRUE indicates that an error occurred, whereas FALSE indicates there was no error (although 'code' may still carry a warning).",
+   "options": {
+    "a": "status",
+    "b": "code",
+    "c": "source",
+    "d": "description"
+   }
+  },
+  "195": {
+   "question": "Which error-propagation pattern is recommended along a block diagram with multiple chained VIs and functions?",
+   "explanation": "Good LabVIEW practice is to chain the error cluster between successive nodes, so that an error detected at one point propagates automatically and can prevent unsafe later steps from executing.",
+   "options": {
+    "a": "Chain the error cluster from the output of one node to the error input of the next node, forming a continuous 'error chain'",
+    "b": "Ignore the error cluster and manually check each result with a Probe",
+    "c": "Use global variables exclusively to report errors",
+    "d": "Stop the VI immediately with a Breakpoint every time an error occurs"
+   }
+  },
+  "196": {
+   "question": "If a node receives an error cluster with 'status' TRUE at its error input, what is the typical behavior of most standard LabVIEW functions and VIs with regard to their execution?",
+   "explanation": "Many LabVIEW I/O functions and VIs check the incoming error cluster: if it already indicates an error, they skip their main action (for example, they do not attempt to write to a file) and simply propagate the error they received.",
+   "options": {
+    "a": "Many functions skip performing their main operation and simply pass the incoming error through to their output, without carrying out the normal action",
+    "b": "They completely ignore the error cluster and run their function normally without restriction",
+    "c": "They immediately and forcibly stop the entire VI",
+    "d": "They automatically turn the error into a warning and continue"
+   }
+  },
+  "197": {
+   "question": "Which execution setting, available from the View menu or a toolbar button, lets you deliberately slow the execution speed in order to observe Highlight Execution better?",
+   "explanation": "When Highlight Execution is active, LabVIEW shows a speed control that lets you adjust how slowly the data flow is animated, making step-by-step visual tracking easier.",
+   "options": {
+    "a": "The execution speed slider associated with Highlight Execution",
+    "b": "The Breakpoint button",
+    "c": "The Icon Editor",
+    "d": "The VI Hierarchy window"
+   }
+  },
+  "198": {
+   "question": "A VI runs with no edit-time errors (the Run arrow is not broken), but when executed it consistently produces an incorrect numeric result. What is the most appropriate debugging strategy for identifying the cause?",
+   "explanation": "When there are no edit-time errors but the result is logically wrong, the recommended strategy is to use Highlight Execution and Probes to inspect the intermediate values and locate the point at which the logic diverges from what was expected.",
+   "options": {
+    "a": "Use Highlight Execution combined with Probes at key points on the diagram to check the actual intermediate values against the expected ones",
+    "b": "Completely reinstall LabVIEW",
+    "c": "Ignore the problem, since no edit-time errors are reported",
+    "d": "Convert the whole VI into a reentrant SubVI"
+   }
+  },
+  "199": {
+   "question": "Which of the following is a common cause of a VI showing a broken Run arrow?",
+   "explanation": "Leaving a mandatory (required) input terminal of a function unwired is one of the most common reasons LabVIEW marks a VI as broken, showing the broken arrow.",
+   "options": {
+    "a": "A required input terminal of a function left unwired",
+    "b": "A Boolean control set to TRUE by default",
+    "c": "A free comment added to the block diagram",
+    "d": "A cluster with more than 3 elements"
+   }
+  },
+  "200": {
+   "question": "What does a small red 'X' over a Probe placed on a wire represent, after running the VI?",
+   "explanation": "If the wire the Probe is on belongs to a branch of code that did not execute on that pass (for example, an unselected case of a Case Structure), the Probe may indicate that no updated value is available.",
+   "options": {
+    "a": "That this particular wire did not execute/did not carry data during that run of the VI (for example, because it is in an unselected case of a Case Structure)",
+    "b": "That the value shown is always invalid",
+    "c": "That the Probe is misconfigured and must be deleted",
+    "d": "That an irreversible critical error occurred"
+   }
+  },
+  "201": {
+   "question": "What advantage does placing a Breakpoint tied to a specific point of interest offer, compared with simply using Highlight Execution across the whole VI?",
+   "explanation": "A Breakpoint halts execution exactly at the point of interest, letting you inspect state without having to visually slow down the whole rest of the diagram the way Highlight Execution does.",
+   "options": {
+    "a": "It lets you halt execution exactly at the point of interest without unnecessarily slowing down the rest of the program",
+    "b": "Both tools are exactly equivalent in functionality",
+    "c": "A Breakpoint can never be combined with Probes",
+    "d": "Highlight Execution is always faster to set up than a Breakpoint"
+   }
+  },
+  "202": {
+   "question": "Which VI is commonly used to manually create (simulate) a specific error within an error-handling flow, useful for testing error-handling paths?",
+   "explanation": "The General Error Handler (or simply building the error cluster by hand with Bundle) lets you generate custom errors with specific codes and descriptions, useful for testing how the VI's error handling responds.",
+   "options": {
+    "a": "General Error Handler (or building the cluster manually with Bundle)",
+    "b": "Merge Errors",
+    "c": "Simple Error Handler",
+    "d": "Format Into String"
+   }
+  },
+  "203": {
+   "question": "What is a key difference between debugging with Probes and using permanent indicators wired on the front panel?",
+   "explanation": "Probes are added and removed freely during debugging without affecting the final front panel design, whereas indicators are a permanent part of the VI's user interface.",
+   "options": {
+    "a": "Probes are temporary debugging tools that are not part of the VI's final design, whereas indicators are part of the finished user interface",
+    "b": "Indicators can only be used during debugging, never in production",
+    "c": "Probes cannot display numeric values",
+    "d": "There is no difference between the two"
+   }
+  },
+  "204": {
+   "question": "Which toolbar button, shaped like two circular arrows, lets you restart execution of the VI from the beginning while it is paused at a Breakpoint?",
+   "explanation": "The debugging toolbar provides controls for restarting or continuing execution from a Breakpoint, letting the developer resume the program flow as needed.",
+   "options": {
+    "a": "Retry/Restart execution (or the equivalent execution-restart control)",
+    "b": "Step Into",
+    "c": "Step Over",
+    "d": "Probe Watch Window"
+   }
+  },
+  "205": {
+   "question": "In a VI with a Case Structure where the 'True' case has an internal wiring error but the 'False' case is wired correctly, can the VI run?",
+   "explanation": "LabVIEW validates the complete block diagram at compile time, including ALL cases of a Case Structure; a wiring error in any case, even one that is not active, leaves the entire VI broken.",
+   "options": {
+    "a": "No; a wiring error in any case of the Case Structure breaks the entire VI, regardless of which case is active at run time",
+    "b": "Yes, as long as the selector is FALSE during execution",
+    "c": "Yes, LabVIEW automatically ignores cases with errors",
+    "d": "Only if the case with the error is manually deleted before compiling"
+   }
+  },
+  "206": {
+   "question": "What does the 'Probe Watch Window' provide when multiple Probes are placed at different points of a complex block diagram?",
+   "explanation": "The Probe Watch Window gathers all of the VI's active Probes into a single window, letting you observe their values at the same time without hunting for each individual Probe window.",
+   "options": {
+    "a": "It centralizes the display of all active Probe values in a single window, making them easy to track simultaneously",
+    "b": "It automatically deletes unused Probes",
+    "c": "It converts the Probes into permanent front panel indicators",
+    "d": "It automatically stops VI execution"
+   }
+  },
+  "207": {
+   "question": "Which debugging action is most appropriate when you suspect a While Loop never reaches its stop condition (an infinite loop)?",
+   "explanation": "To diagnose a possible infinite loop, it is useful to place a Probe or Breakpoint directly on the wire reaching the conditional terminal, to check why it never receives the expected value that would stop the loop.",
+   "options": {
+    "a": "Place a Breakpoint or Probe on the conditional terminal to inspect its value on each iteration",
+    "b": "Delete the loop from the diagram outright",
+    "c": "Convert the While Loop into a Formula Node",
+    "d": "Ignore the problem until the system freezes"
+   }
+  },
+  "208": {
+   "question": "What is the difference between placing a Breakpoint on a wire and placing one on a node (such as a SubVI) on the block diagram?",
+   "explanation": "A Breakpoint on a wire pauses execution at the moment data travels through that specific point, whereas one placed on a node lets you choose to pause before or after that node completes execution.",
+   "options": {
+    "a": "On a wire, execution halts exactly when data passes along that wire; on a node, it halts before or after that node has finished executing",
+    "b": "There is no functional difference between the two cases",
+    "c": "A Breakpoint can only be placed on wires, never on nodes",
+    "d": "A Breakpoint on a node always halts execution of the entire project"
+   }
+  },
+  "209": {
+   "question": "What is a 'State Machine' as a design pattern in LabVIEW?",
+   "explanation": "The state machine combines a While Loop with a Case Structure (normally with an Enum selector) and a Shift Register that carries the next state to execute, enabling complex, non-linear flow logic.",
+   "options": {
+    "a": "An architecture based on a Case Structure inside a While Loop, where each case represents a state and determines which state will run next",
+    "b": "A pattern exclusively for handling binary files",
+    "c": "A structure that can only be used with Boolean controls",
+    "d": "A type of loop that replaces the While Loop"
+   }
+  },
+  "210": {
+   "question": "In a typical state machine, which element is normally used to carry the current/next state identifier from one loop iteration to the next?",
+   "explanation": "The Shift Register stores and carries the value of the next state to execute between iterations of the While Loop that contains the state machine's Case Structure.",
+   "options": {
+    "a": "A Shift Register (frequently of Enum type)",
+    "b": "A Formula Node",
+    "c": "An Array Subset",
+    "d": "A Path control"
+   }
+  },
+  "211": {
+   "question": "Why is it recommended to use an Enum data type (instead of a plain integer) as the Case Structure selector in a state machine?",
+   "explanation": "Using an Enum gives each state a readable name (for example 'Initialize', 'Process', 'Stop'), instead of numbers without context, making the code easier to read and maintain.",
+   "options": {
+    "a": "Because the Enum associates descriptive names with each state, improving code readability and reducing errors by referring to states by name rather than arbitrary numbers",
+    "b": "Because a plain integer can never be used as a Case Structure selector",
+    "c": "Because the Enum executes states faster than an integer",
+    "d": "Because only the Enum allows Shift Registers to be used"
+   }
+  },
+  "212": {
+   "question": "What main advantage does a state machine offer over a strictly linear sequence of steps (such as a Flat Sequence) for controlling an application's flow?",
+   "explanation": "Unlike a fixed sequence, the state machine can dynamically decide which state comes next based on conditions evaluated during execution, allowing loops, branches and jumps between states.",
+   "options": {
+    "a": "It allows non-linear execution flow, where the next state can depend on dynamic conditions evaluated at run time (for example, skipping, repeating or branching between states)",
+    "b": "It completely removes the need to handle errors",
+    "c": "It can only be used in applications with no user interface",
+    "d": "It automatically reduces the size of the VI's icon"
+   }
+  },
+  "213": {
+   "question": "What characterizes the 'Master/Slave' architecture in LabVIEW?",
+   "explanation": "In a Master/Slave architecture, one loop (the master) typically manages the user interface or control logic, while one or more slave loops carry out specific tasks (such as data acquisition), communicating with each other through mechanisms such as local variables, notifiers or queues.",
+   "options": {
+    "a": "It consists of two or more parallel loops running at different rates or with different responsibilities, where a 'master' loop coordinates or sends instructions to one or more 'slave' loops",
+    "b": "It is a pattern that can only be implemented with a single loop",
+    "c": "It mandatorily requires the use of binary files",
+    "d": "It is identical to the Producer/Consumer pattern with no difference at all"
+   }
+  },
+  "214": {
+   "question": "What characterizes the 'Producer/Consumer' design pattern?",
+   "explanation": "The Producer/Consumer pattern decouples data generation (producer) from its processing (consumer), letting each loop run at its own rate and communicate safely through a queue or another mechanism for passing data between loops.",
+   "options": {
+    "a": "One loop (the producer) generates data and places it into a communication structure (such as a queue), while another loop (the consumer) removes and processes it at its own pace",
+    "b": "Both loops must run at exactly the same rate, synchronized cycle by cycle",
+    "c": "It can only be implemented using Formula Nodes",
+    "d": "It requires both loops to share the same Shift Register directly"
+   }
+  },
+  "215": {
+   "question": "Which communication structure between parallel loops is most commonly used to implement the Producer/Consumer pattern, guaranteeing that no data is lost?",
+   "explanation": "Queues let the producer loop enqueue data safely (thread-safe) and the consumer dequeue it in the FIFO order it was generated, avoiding data loss between parallel loops.",
+   "options": {
+    "a": "A Queue",
+    "b": "A Shift Register shared directly between loops",
+    "c": "A read-only global constant",
+    "d": "A shared Formula Node"
+   }
+  },
+  "216": {
+   "question": "Why is it NOT recommended to use local or global variables as the primary mechanism for high-volume data communication between independent parallel loops?",
+   "explanation": "Local/global variables do not guarantee synchronization between concurrent reads and writes from different loops, which can cause intermediate values to be lost or race conditions to occur, unlike mechanisms designed for inter-process communication such as queues.",
+   "options": {
+    "a": "Because they can create race conditions and data loss, since they guarantee neither synchronization nor delivery order between concurrent reads and writes",
+    "b": "Because LabVIEW does not allow VIs using local variables to compile",
+    "c": "Because local variables only work with Boolean data",
+    "d": "Because they always use more memory than a queue, without exception"
+   }
+  },
+  "217": {
+   "question": "What is meant by 'modularity' in LabVIEW application design?",
+   "explanation": "Modularity means breaking the problem down into manageable pieces (SubVIs) with clear responsibilities, which favours reuse, independent testing and code maintenance.",
+   "options": {
+    "a": "The practice of dividing a large application into independent, reusable components (SubVIs), each with a well-defined responsibility",
+    "b": "The requirement to use exactly one VI for the whole application",
+    "c": "The complete removal of flow control structures",
+    "d": "The exclusive use of global variables to share data"
+   }
+  },
+  "218": {
+   "question": "What is a 'VI Template' in LabVIEW?",
+   "explanation": "VI Templates provide a reusable starting point with the typical architecture of a pattern (for example, a state machine) already set up, speeding up the creation of new VIs that follow that same design.",
+   "options": {
+    "a": "A preconfigured starting file with a base structure and elements (such as a state machine pattern), used as a starting point for creating new VIs with that architecture",
+    "b": "A file type used exclusively for saving images",
+    "c": "A predefined mathematical function",
+    "d": "A type of conditional control structure"
+   }
+  },
+  "219": {
+   "question": "In a Producer/Consumer pattern implemented with a queue, if the producer loop generates data faster than the consumer loop can process it, what typically happens to the queue if its size is not limited?",
+   "explanation": "If no maximum size is configured for the queue, it can keep growing indefinitely in memory while the producer outpaces the consumer; limiting its size when necessary is the designer's responsibility.",
+   "options": {
+    "a": "The queue keeps accumulating pending elements, growing in memory until they are consumed by the consumer loop",
+    "b": "The oldest data is discarded automatically with no additional configuration",
+    "c": "The producer loop stops automatically and permanently",
+    "d": "LabVIEW generates a compile error"
+   }
+  },
+  "220": {
+   "question": "Which design pattern is most appropriate when an application's user interface must react efficiently to multiple user events (clicks, value changes) without constantly polling each control?",
+   "explanation": "The Event-Driven State Machine pattern combines an Event Structure inside a While Loop (or within the state machine) to react efficiently to user events without continuous polling.",
+   "options": {
+    "a": "Event-Driven State Machine",
+    "b": "A single Flat Sequence with all the controls in one frame",
+    "c": "A Formula Node that checks each control in a loop",
+    "d": "An error cluster shared between all controls"
+   }
+  },
+  "221": {
+   "question": "Which of the following design practices most directly improves the readability and maintainability of a complex block diagram?",
+   "explanation": "A diagram arranged from left to right, with related functionality encapsulated in well-named and well-documented SubVIs, is a key practice for keeping code readable and maintainable in the long term.",
+   "options": {
+    "a": "Arranging the dataflow from left to right and grouping related functionality into well-documented SubVIs",
+    "b": "Placing all the code inside a single frame of a Stacked Sequence, without using SubVIs",
+    "c": "Using generic names such as 'VI1', 'VI2' for all SubVIs",
+    "d": "Avoiding comments and labels to save space"
+   }
+  },
+  "222": {
+   "question": "What role does a Queue typically play in the 'Channeled Message Handler' (CMH) pattern introduced in advanced LabVIEW courses, compared with the classic Producer/Consumer?",
+   "explanation": "Channel Wires (used in patterns such as CMH) encapsulate communication mechanisms like queues or notifiers, offering simpler syntax for connecting producer/consumer loops without explicitly wiring each queue VI.",
+   "options": {
+    "a": "It remains the underlying message-passing mechanism between loops, although encapsulated by 'Channel Wires' that simplify the communication syntax",
+    "b": "It completely removes the need for communication between loops",
+    "c": "It is always replaced by global variables",
+    "d": "It can only be used to transfer Boolean data"
+   }
+  },
+  "223": {
+   "question": "What is a disadvantage of building all of an application's logic inside a single large While Loop, mixing data acquisition, processing and the user interface?",
+   "explanation": "When all tasks share a single loop, a slow operation (such as waiting for data from an instrument) can block the user interface from updating; it is preferable to separate responsibilities into independent parallel loops.",
+   "options": {
+    "a": "The user interface can become unresponsive if some operation (such as a slow acquisition) blocks execution of the rest of the loop",
+    "b": "The VI runs faster than if it were split into several parallel loops",
+    "c": "LabVIEW does not allow VIs with a single While Loop to compile",
+    "d": "It is the only valid way to structure any LabVIEW application"
+   }
+  },
+  "224": {
+   "question": "In a state machine, which special case is usually added to let the While Loop terminate the application's execution correctly?",
+   "explanation": "It is common to include a dedicated state (for example 'Stop') that performs the necessary final cleanup tasks (such as closing files or references) before setting the While Loop's conditional terminal to TRUE.",
+   "options": {
+    "a": "An explicit state, such as 'Stop' or 'Exit', that performs cleanup tasks (closing references, releasing memory) before setting the loop's stop condition to TRUE",
+    "b": "No additional state is needed; the loop stops on its own",
+    "c": "A state that must be named 'Default' with no action at all",
+    "d": "An empty Shift Register with no initial value"
+   }
+  },
+  "225": {
+   "question": "Which design pattern is most appropriate for a simple application that merely runs a fixed sequence of steps, always in the same order, with no branching or dynamic loops?",
+   "explanation": "When the application's flow is strictly linear and requires no dynamic decisions, a simple Sequence Structure can be enough, avoiding the unnecessary complexity of a full state machine.",
+   "options": {
+    "a": "A simple Sequence Structure (Flat Sequence)",
+    "b": "A full state machine with an Enum",
+    "c": "A Producer/Consumer pattern with two queues",
+    "d": "A Master/Slave pattern with three parallel loops"
+   }
+  },
+  "226": {
+   "question": "In a Producer/Consumer architecture with two parallel loops communicating through a queue, which function is used in the consumer loop to remove the next available element from the queue, waiting if necessary?",
+   "explanation": "Dequeue Element removes (and deletes) the next available element from the queue in FIFO order, waiting (with a configurable timeout) if the queue is empty at that moment.",
+   "options": {
+    "a": "Dequeue Element",
+    "b": "Enqueue Element",
+    "c": "Obtain Queue",
+    "d": "Release Queue"
+   }
+  },
+  "227": {
+   "question": "Which function is used in the producer loop of a Producer/Consumer pattern to add a new element to the shared queue?",
+   "explanation": "Enqueue Element adds a new element to the end of the queue, available to be removed later by the consumer loop with Dequeue Element.",
+   "options": {
+    "a": "Enqueue Element",
+    "b": "Dequeue Element",
+    "c": "Flush Queue",
+    "d": "Release Queue"
+   }
+  },
+  "228": {
+   "question": "Which function should be used when you have finished using a queue in an application, to release the resources associated with it?",
+   "explanation": "Release Queue frees the reference and the resources associated with a queue previously created with Create Queue; calling it when the application ends is good practice to avoid resource leaks.",
+   "options": {
+    "a": "Release Queue",
+    "b": "Create Queue",
+    "c": "Enqueue Element",
+    "d": "Preview Queue Element"
+   }
+  },
+  "229": {
+   "question": "What file extension is used to save a LabVIEW project?",
+   "explanation": "A LabVIEW project is saved with the .lvproj extension and hierarchically organizes all the VIs, libraries and other items related to an application.",
+   "options": {
+    "a": ".lvproj",
+    "b": ".vi",
+    "c": ".ctl",
+    "d": ".lvlib"
+   }
+  },
+  "230": {
+   "question": "Which item in the Project Explorer represents the computer (or another destination device) on which the code will run, grouping the VIs associated with it?",
+   "explanation": "Within a project, each 'Target' represents an execution destination (such as the computer itself or another device), and groups the VIs and files associated with that destination.",
+   "options": {
+    "a": "A 'Target' (for example, 'My Computer')",
+    "b": "A Build Specification",
+    "c": "A .ctl file",
+    "d": "A Type Definition"
+   }
+  },
+  "231": {
+   "question": "What is a library (.lvlib) within a LabVIEW project?",
+   "explanation": "A project library (.lvlib) logically groups VIs and other files under a namespace, helping to organize them and avoid name conflicts in large projects.",
+   "options": {
+    "a": "A logical container that groups VIs, controls and other related files under a common namespace, making them easier to organize",
+    "b": "A type of flow control structure",
+    "c": "A file used exclusively for storing icon images",
+    "d": "A special numeric data type"
+   }
+  },
+  "232": {
+   "question": "What is a 'Build Specification' within the Project Explorer?",
+   "explanation": "Build Specifications configure how the application will be packaged (for example as an executable, installer or package), specifying which VIs to include and other build options.",
+   "options": {
+    "a": "A configuration that defines how to generate a distribution artifact (for example, a standalone executable) from the project's VIs",
+    "b": "A file containing only the source code of a SubVI",
+    "c": "A structure for handling multidimensional arrays",
+    "d": "A custom control saved as a typedef"
+   }
+  },
+  "233": {
+   "question": "Which special area of the Project Explorer is normally used to include files that must be distributed alongside the application but that are not LabVIEW VIs (such as configuration files)?",
+   "explanation": "In the Project Explorer and in Build Specifications you can include additional files (such as INI files, images or documentation) that will be distributed with the final application.",
+   "options": {
+    "a": "Build Specifications / the additional-resources area (Support Directory / manually included files)",
+    "b": "The 'Dependencies' folder exclusively, with no way to add other files",
+    "c": "The connector pane",
+    "d": "The Context Help window"
+   }
+  },
+  "234": {
+   "question": "Which virtual folder in the Project Explorer automatically shows all the SubVIs and external resources a VI included in the project depends on?",
+   "explanation": "The 'Dependencies' folder is generated automatically and lists all the VIs, libraries and external resources required by the project's VIs, with no need to add them manually.",
+   "options": {
+    "a": "'Dependencies'",
+    "b": "'Build Specifications'",
+    "c": "'My Computer'",
+    "d": "'Support Files'"
+   }
+  },
+  "235": {
+   "question": "What is one of the main advantages of organizing a LabVIEW application with a project file (.lvproj) rather than simply opening loose VIs?",
+   "explanation": "The project file centralizes the organization of a complete application, including multiple VIs, hardware targets, libraries and the settings needed to generate distributions (Build Specifications).",
+   "options": {
+    "a": "It lets you centrally manage targets, libraries, dependencies and build specifications for the whole application",
+    "b": "It is mandatory in order to run any VI in LabVIEW",
+    "c": "It automatically reduces the size of each individual VI",
+    "d": "It removes the need to define icons in SubVIs"
+   }
+  },
+  "236": {
+   "question": "What happens to the names of VIs included inside a project library (.lvlib), with respect to VIs of the same name elsewhere in the project?",
+   "explanation": "Using libraries (.lvlib) qualifies VI names within their own namespace, so that VIs with the same name can coexist in different libraries without conflicts.",
+   "options": {
+    "a": "The VI name is qualified with the library's namespace, avoiding duplicate-name conflicts between different libraries",
+    "b": "LabVIEW never allows VIs with the same name under any circumstances, even in different libraries",
+    "c": "The VI name is automatically changed at random",
+    "d": "Libraries have no effect whatsoever on VI names"
+   }
+  },
+  "237": {
+   "question": "Which shortcut-menu action on a target in the Project Explorer lets you add new VIs or folders to that target?",
+   "explanation": "The 'Add' shortcut menu on a project target lets you bring existing files, new VIs, folders or other items into that target within the Project Explorer.",
+   "options": {
+    "a": "'Add' > select the kind of item to include (for example, File or New VI)",
+    "b": "'Delete'",
+    "c": "'Run'",
+    "d": "'Rename'"
+   }
+  },
+  "238": {
+   "question": "Which item in the Project Explorer lets you create a standalone executable of the application, which does not require LabVIEW to be installed in order to run (only the LabVIEW Run-Time Engine)?",
+   "explanation": "A Build Specification of type Application (EXE) generates a standalone executable of the application, which can be distributed to machines without LabVIEW installed, provided they have the corresponding LabVIEW Run-Time Engine.",
+   "options": {
+    "a": "A Build Specification of type 'Application (EXE)'",
+    "b": "A Type Definition",
+    "c": "A library (.lvlib)",
+    "d": "The connector pane of the main VI"
+   }
+  },
+  "239": {
+   "question": "Which high-level function is used to quickly write a numeric array (1D or 2D) to a text file in spreadsheet format (delimiter-separated values)?",
+   "explanation": "Write to Spreadsheet File is a high-level function that converts a numeric array into delimited text (for example, tab-separated) and writes it to a file, handling opening and closing the file internally.",
+   "options": {
+    "a": "Write to Spreadsheet File",
+    "b": "Write to Text File",
+    "c": "Open/Create/Replace File",
+    "d": "Write to Binary File"
+   }
+  },
+  "240": {
+   "question": "Which high-level function is used to read numeric data from a spreadsheet-format text file into an array?",
+   "explanation": "Read from Spreadsheet File reads a delimited text file and converts its contents into a numeric array, automatically handling opening, reading and closing the file.",
+   "options": {
+    "a": "Read from Spreadsheet File",
+    "b": "Read from Text File",
+    "c": "Read from Binary File",
+    "d": "Scan From String"
+   }
+  },
+  "241": {
+   "question": "What is the main difference between 'high-level' file I/O functions (such as Write to Spreadsheet File) and 'low-level' ones (such as Open/Create/Replace File, Write File, Close File)?",
+   "explanation": "High-level functions simplify common operations into a single call, whereas low-level ones give explicit control over each step (open, read/write repeatedly, close), which is useful for data streaming or greater control over the process.",
+   "options": {
+    "a": "High-level functions internally combine several operations (open, write/read, close) into a single call, whereas low-level ones require each step to be managed separately, offering greater control",
+    "b": "Low-level functions can only be used with binary files",
+    "c": "High-level functions cannot be used inside a loop",
+    "d": "There is no real difference between the two groups of functions"
+   }
+  },
+  "242": {
+   "question": "Which low-level function must be used first to obtain a reference (refnum) to a file before it can be read from or written to repeatedly inside a loop?",
+   "explanation": "Open/Create/Replace File opens (or creates) a file and returns a reference (refnum) used in later read/write calls, allowing the file to stay open across multiple operations.",
+   "options": {
+    "a": "Open/Create/Replace File",
+    "b": "Write to Text File",
+    "c": "Close File",
+    "d": "Format Into String"
+   }
+  },
+  "243": {
+   "question": "Which function must be called when read/write operations on a file opened with Open/Create/Replace File are finished, in order to release the resource properly?",
+   "explanation": "Close File closes the reference to the open file, releasing the operating system resource and ensuring any pending data is correctly written to disk.",
+   "options": {
+    "a": "Close File",
+    "b": "Open/Create/Replace File",
+    "c": "Delete File",
+    "d": "Format Into String"
+   }
+  },
+  "244": {
+   "question": "Why is it recommended to use low-level functions (Open/Create/Replace File + Write File inside a loop + Close File) instead of Write to Text File repeatedly inside a loop, when continuously streaming data to a file?",
+   "explanation": "Reopening and closing the file on every loop iteration creates unnecessary overhead; with low-level functions the file is opened once, written to repeatedly and closed at the end, which is far more efficient for continuous streaming.",
+   "options": {
+    "a": "Because opening and closing the file on every iteration (as repeatedly using the high-level Write to Text File would) is inefficient; keeping the file open with low-level functions avoids that repeated overhead",
+    "b": "Because high-level functions can never be used inside a loop",
+    "c": "Because low-level functions are the only ones that can write text",
+    "d": "Because there is no performance difference between the two approaches"
+   }
+  },
+  "245": {
+   "question": "Which data type represents a file or folder location independently of the operating system in LabVIEW?",
+   "explanation": "The Path data type represents file and folder paths independently of the platform (Windows, macOS, Linux), with its own internal format distinct from a plain string.",
+   "options": {
+    "a": "Path",
+    "b": "String",
+    "c": "Cluster",
+    "d": "Refnum"
+   }
+  },
+  "246": {
+   "question": "Which function is used to dynamically build a file path by combining a base path (for example a folder) with a file or subfolder name?",
+   "explanation": "Build Path combines a base path with an additional component (a file or folder name) to construct a new complete path, respecting the correct format for the operating system.",
+   "options": {
+    "a": "Build Path",
+    "b": "Strip Path",
+    "c": "Array Subset",
+    "d": "Concatenate Strings (applied directly to Paths)"
+   }
+  },
+  "247": {
+   "question": "Which function breaks a file path into the path of the containing folder and the name of the last component (file or subfolder)?",
+   "explanation": "Strip Path separates a path into two parts: the path of the folder containing it and the name of the last item (file or folder), useful for navigating or manipulating paths dynamically.",
+   "options": {
+    "a": "Strip Path",
+    "b": "Build Path",
+    "c": "String Subset",
+    "d": "Format Into String"
+   }
+  },
+  "248": {
+   "question": "Which VI/function is used to check whether a file or folder exists at a given path before attempting to open it?",
+   "explanation": "Check if File or Folder Exists tests whether a file or folder exists at the specified path, returning a Boolean, useful for avoiding errors before attempting to open or read a file.",
+   "options": {
+    "a": "Check if File or Folder Exists",
+    "b": "Open/Create/Replace File",
+    "c": "Delete",
+    "d": "Copy"
+   }
+  },
+  "249": {
+   "question": "What is the main difference between writing data to a plain text file and writing data to a binary file in LabVIEW?",
+   "explanation": "A text file stores data as characters (requiring numbers to be converted to strings and back), whereas a binary file stores the raw bytes of the data, taking up less space but not being directly readable in a text editor.",
+   "options": {
+    "a": "The text file stores data as readable characters (requiring conversion to/from other types), whereas the binary one stores data in its raw byte representation, which is more compact but not directly readable",
+    "b": "There is no real difference between the two formats",
+    "c": "Binary files can only contain Booleans",
+    "d": "Text files cannot contain numbers, only letters"
+   }
+  },
+  "250": {
+   "question": "Which of the following advantages does the TDMS file format typically offer over a plain text file for logging large volumes of measurement data?",
+   "explanation": "The TDMS (Technical Data Management Streaming) format is optimized for efficiently logging measurement data together with its metadata (such as units or acquisition date), and can also be exported to/read from Excel via an NI add-in.",
+   "options": {
+    "a": "It stores data more efficiently, together with metadata (properties) associated with each data channel",
+    "b": "It can only be used to store strings, never numeric data",
+    "c": "It is identical in structure to a delimited text file",
+    "d": "It cannot subsequently be read from Excel"
+   }
+  },
+  "251": {
+   "question": "When dynamically building a file name that includes the current date and time (for example, to log data with a timestamp), which combination of functions is commonly used?",
+   "explanation": "It is common to get the current timestamp with Get Date/Time In Seconds, format it readably with Format Date/Time String, and then combine that text with the base path using Build Path or Concatenate Strings to generate unique file names.",
+   "options": {
+    "a": "'Get Date/Time In Seconds' together with 'Format Date/Time String', then combined with Build Path or Concatenate Strings",
+    "b": "Array Size only",
+    "c": "Bundle by Name only",
+    "d": "Read from Spreadsheet File exclusively"
+   }
+  },
+  "252": {
+   "question": "Which LabVIEW constant is commonly used to represent, platform-independently, the operating system's temporary folder or the user's desktop when building file paths?",
+   "explanation": "LabVIEW provides predefined Path constants (such as the system temporary folder or the application's default directory) that make it easy to build file paths portable across different operating systems.",
+   "options": {
+    "a": "Predefined Path constants (for example 'Default Directory' or 'Temp Directory')",
+    "b": "An arbitrary numeric constant",
+    "c": "A Boolean constant",
+    "d": "An Enum control unrelated to paths"
+   }
+  },
+  "253": {
+   "question": "You need to read a very large text file line by line, processing each line as it is read, without loading the whole file into memory at once. Which approach is most appropriate?",
+   "explanation": "For large files, the recommended approach is to open the file once with low-level functions and read it incrementally (for example, line by line or in blocks) inside a loop, avoiding loading all the content into memory at once.",
+   "options": {
+    "a": "Use low-level functions (Open File + Read Text File/Read Line) inside a loop, reading and processing portions of the file incrementally",
+    "b": "Use Read from Spreadsheet File exclusively, which always processes line by line automatically",
+    "c": "Load the whole file with Read from Text File and then ignore most of the content",
+    "d": "It is impossible to read large files incrementally in LabVIEW"
+   }
+  },
+  "254": {
+   "question": "Which parameter of the Open/Create/Replace File function lets you specify whether a new file should be created, an existing one opened, or an existing one replaced if it already exists?",
+   "explanation": "The operation mode parameter of Open/Create/Replace File determines the behavior with respect to the file's prior existence: open an existing one, create a new one, or replace an existing one, among other options.",
+   "options": {
+    "a": "The 'operation' parameter (open mode: open, create, replace, and so on)",
+    "b": "The 'refnum' parameter",
+    "c": "The 'error in' parameter",
+    "d": "The 'byte order' parameter"
+   }
+  },
+  "255": {
+   "question": "Which of the following situations justifies using a binary file instead of a text file for data logging in a high-speed acquisition application?",
+   "explanation": "Binary files are faster to write and take up less space than their text equivalent, making them preferable in high-speed acquisition applications where performance is critical, although they sacrifice direct readability.",
+   "options": {
+    "a": "When write speed must be maximized and file size minimized, at the cost of direct human readability",
+    "b": "When the file must be openable and readable directly in a simple text editor with no conversion",
+    "c": "When the data volume is minimal and speed is not a relevant factor",
+    "d": "Binary files should never be used for numeric data"
+   }
+  },
+  "256": {
+   "question": "What advantage does chaining the error cluster through the file functions (Open, Write/Read, Close) offer, instead of checking each operation in isolation?",
+   "explanation": "Chaining the error cluster ensures that if, for example, Open File fails, the later functions (Write, Close) receive that error and avoid performing their main operation on an invalid file reference, safely propagating the error to the final handler.",
+   "options": {
+    "a": "It guarantees that, if an error occurs when opening the file, the later read/write and close operations do not needlessly try to run on an invalid reference",
+    "b": "It causes the file to be opened twice automatically for extra safety",
+    "c": "It makes the file functions ignore any error that occurred",
+    "d": "It has no real advantage over checking each step separately"
+   }
+  },
+  "257": {
+   "question": "Which function is used to pause block diagram execution for a specific number of milliseconds?",
+   "explanation": "Wait (ms) halts execution of the current thread for the number of milliseconds specified at its input, regardless of how much time has previously elapsed.",
+   "options": {
+    "a": "Wait (ms)",
+    "b": "Wait Until Next ms Multiple",
+    "c": "Tick Count (ms)",
+    "d": "Elapsed Time"
+   }
+  },
+  "258": {
+   "question": "What is the main difference between the 'Wait (ms)' and 'Wait Until Next ms Multiple' functions when used inside a loop?",
+   "explanation": "Wait (ms) simply waits the stated time from the moment it runs (which can accumulate drift if other parts of the code take varying amounts of time), whereas Wait Until Next ms Multiple synchronizes loop execution with absolute multiples of the system clock, achieving more consistent periodicity.",
+   "options": {
+    "a": "Wait (ms) always waits the stated number of milliseconds from when it runs, whereas Wait Until Next ms Multiple synchronizes the wait with absolute multiples of the system clock, producing more regularly timed iterations",
+    "b": "Both functions are exactly equivalent in all cases",
+    "c": "Wait Until Next ms Multiple cannot be used inside loops",
+    "d": "Wait (ms) is always more precise than Wait Until Next ms Multiple"
+   }
+  },
+  "259": {
+   "question": "Why is it good practice to include some timing function (such as Wait (ms)) inside a While Loop that has no other natural cause to wait?",
+   "explanation": "Without a pause that yields processor time, a While Loop can run its iterations as fast as possible, unnecessarily consuming a whole CPU core; a wait function frees processor cycles for other system tasks.",
+   "options": {
+    "a": "To prevent the loop from unnecessarily consuming 100% of a processor core, leaving CPU time available for other tasks",
+    "b": "Because LabVIEW does not allow a While Loop without a timing function to compile",
+    "c": "Because it automatically reduces the program's total execution time",
+    "d": "Because it is a mandatory requirement of the LabVIEW compiler"
+   }
+  },
+  "260": {
+   "question": "In a Case Structure whose selector is wired to the output of a communication structure's wait function (such as Dequeue Element with a timeout), what does the case executed when the timeout expires without receiving data represent?",
+   "explanation": "Many inter-process communication functions (such as queues or notifiers) allow a timeout to be configured; if it expires without receiving data, that specific case can be handled (for example, through the 'timed out?' Boolean) to run an alternative action.",
+   "options": {
+    "a": "The 'timeout' case, which lets an alternative action run (such as retrying or logging the absence of data) when no information arrived within the expected time",
+    "b": "An unrecoverable compile error",
+    "c": "The same case that runs when data does arrive, with no difference at all",
+    "d": "A state that immediately stops the whole program with no possibility of recovery"
+   }
+  },
+  "261": {
+   "question": "Which function is used to obtain the value of the system's millisecond counter (useful for measuring elapsed time intervals between two points in the code)?",
+   "explanation": "Tick Count (ms) returns the current value of an internal millisecond counter, useful for computing the difference between two readings and thereby measuring how long an operation took.",
+   "options": {
+    "a": "Tick Count (ms)",
+    "b": "Wait (ms)",
+    "c": "Get Date/Time In Seconds",
+    "d": "Wait Until Next ms Multiple"
+   }
+  },
+  "262": {
+   "question": "How can the time elapsed between the start and the end of an operation be calculated using the Tick Count (ms) function?",
+   "explanation": "The elapsed time is obtained by subtracting the initial Tick Count value (read before the operation) from the final value (read afterwards), giving the difference in milliseconds.",
+   "options": {
+    "a": "By subtracting the Tick Count value read at the start from the Tick Count value read at the end of the operation",
+    "b": "By adding both Tick Count values together",
+    "c": "By dividing the final value by the initial value",
+    "d": "By multiplying both Tick Count values"
+   }
+  },
+  "263": {
+   "question": "Which mechanism lets you set a waiting time limit within an Event Structure, so that code runs if no user event occurs during a certain period?",
+   "explanation": "The Event Structure lets you configure a Timeout value (in milliseconds); if no event occurs before that time elapses, the special 'Timeout' event case fires automatically, allowing periodic code to run even without user interaction.",
+   "options": {
+    "a": "Configure the Event Structure's 'Timeout' with a value in milliseconds and handle the special 'Timeout' event case",
+    "b": "It is not possible to set timeouts within an Event Structure",
+    "c": "Use a Formula Node exclusively",
+    "d": "Use a nested Sequence Structure"
+   }
+  },
+  "264": {
+   "question": "If the Timeout terminal of an Event Structure is wired to the constant -1, what behavior results?",
+   "explanation": "A value of -1 (the default) on the Event Structure's Timeout terminal means it should wait indefinitely until a real event occurs, never triggering the Timeout case.",
+   "options": {
+    "a": "The Event Structure waits indefinitely until an event occurs, never generating the Timeout case",
+    "b": "The Event Structure generates an immediate Timeout on every iteration",
+    "c": "LabVIEW generates a compile error for an invalid value",
+    "d": "The VI stops automatically after -1 milliseconds"
+   }
+  },
+  "265": {
+   "question": "What is the difference between measuring time with 'Tick Count (ms)' and with 'Get Date/Time In Seconds' in LabVIEW?",
+   "explanation": "Tick Count (ms) gives a relative value from an internal counter (ideal for computing durations), whereas Get Date/Time In Seconds gives an absolute timestamp (the real date and time), useful for recording when an event occurred.",
+   "options": {
+    "a": "Tick Count (ms) measures a relative internal system counter (useful for measuring short durations), whereas Get Date/Time In Seconds returns the current absolute system date and time",
+    "b": "Both functions return exactly the same kind of value with no practical difference",
+    "c": "Tick Count (ms) returns the full calendar date",
+    "d": "Get Date/Time In Seconds can only be used to measure milliseconds"
+   }
+  },
+  "266": {
+   "question": "You need a While Loop to execute its body exactly once every 500 ms, minimizing accumulated drift even if the loop's internal processing varies slightly in duration from one iteration to the next. Which timing function is most appropriate?",
+   "explanation": "Wait Until Next ms Multiple synchronizes the wait with absolute multiples of the system clock (in this case, every 500 ms), automatically correcting small variations in duration between iterations and minimizing accumulated drift over time.",
+   "options": {
+    "a": "Wait Until Next ms Multiple, configured with the value 500",
+    "b": "Wait (ms), configured with the value 500",
+    "c": "Tick Count (ms), with no other additional function",
+    "d": "There is no way to achieve this behavior in LabVIEW"
+   }
+  },
+  "267": {
+   "question": "Which of the following is a standard style recommendation for improving the readability of a LabVIEW block diagram?",
+   "explanation": "A well-designed block diagram follows the dataflow from left to right, much like reading text, avoiding long, crossing or backward-running wires, which make the program's logic hard to follow.",
+   "options": {
+    "a": "Arrange the code so that the dataflow reads from left to right, avoiding wires that cross diagonally or run backwards",
+    "b": "Overlap all the nodes on top of each other to save space",
+    "c": "Avoid using comments or labels on the diagram so it looks cleaner",
+    "d": "Use global variables exclusively for the entire dataflow"
+   }
+  },
+  "268": {
+   "question": "Which block diagram element is used to add free explanatory text, without affecting code execution, as visual documentation within the diagram itself?",
+   "explanation": "Free Labels let you add text comments directly on the block diagram, unconnected to any terminal, serving purely as visual documentation for whoever reads the code.",
+   "options": {
+    "a": "A Free Label",
+    "b": "A hidden Boolean control",
+    "c": "An empty Formula Node",
+    "d": "An unwired Shift Register"
+   }
+  },
+  "269": {
+   "question": "Why is it recommended to give descriptive names to controls, indicators and SubVIs instead of leaving the generic default names (such as 'Numeric', 'Boolean')?",
+   "explanation": "Descriptive names make the purpose of each control, indicator or SubVI obvious to any developer who reviews the code later, without having to analyze its internal implementation.",
+   "options": {
+    "a": "Because it makes each element's purpose easy to understand without having to inspect its value or internal code, improving maintainability",
+    "b": "Because LabVIEW does not allow VIs with generic names to run",
+    "c": "Because generic names use more memory at run time",
+    "d": "Because it directly affects the VI's execution speed"
+   }
+  },
+  "270": {
+   "question": "Which naming convention is commonly followed for naming SubVIs related to the same functionality within a large application?",
+   "explanation": "Visually grouping related VIs through a consistent prefix or naming convention helps organize them in the Project Explorer and makes related functionality quick to find.",
+   "options": {
+    "a": "Use a common, descriptive prefix or suffix that visually groups related VIs, for example 'DAQ - Read Channel.vi' and 'DAQ - Configure Channel.vi'",
+    "b": "Use only consecutive numbers with no descriptive text",
+    "c": "Use completely random names to avoid conflicts",
+    "d": "Always use the same name for every SubVI in a given library"
+   }
+  },
+  "271": {
+   "question": "Why is it recommended to avoid excessive use of local variables to communicate data between different parts of the same block diagram?",
+   "explanation": "Excessive use of local variables breaks the clarity of dataflow, makes it hard to visually follow how data propagates, and can introduce race conditions if they are read and written from multiple points without synchronization.",
+   "options": {
+    "a": "Because they can introduce race conditions when the same control is read/written from multiple places with no guaranteed order, and they make the program's real dataflow harder to follow",
+    "b": "Because local variables only work with Boolean data",
+    "c": "Because LabVIEW automatically removes local variables when compiling",
+    "d": "Because local variables cannot be used inside loops"
+   }
+  },
+  "272": {
+   "question": "Which of the following practices helps make a VI more easily reusable as a SubVI in other projects?",
+   "explanation": "A reusable SubVI should avoid rigid dependencies (such as fixed paths from a specific project) and offer generic, well-documented inputs/outputs, so it can be integrated easily into different contexts.",
+   "options": {
+    "a": "Designing generic, well-documented inputs and outputs, avoiding unnecessary dependencies on file paths or settings specific to one particular project",
+    "b": "Wiring fixed absolute file paths directly inside the SubVI",
+    "c": "Completely hiding the VI's documentation to simplify its appearance",
+    "d": "Avoiding a custom icon, always leaving the default one"
+   }
+  },
+  "273": {
+   "question": "What maintenance advantage does grouping related constants (for example, configuration limits) using a Type Definition offer, instead of repeating loose constants across several VIs?",
+   "explanation": "Centralizing related values in a Type Definition removes the risk that, when updating a value, you forget to change it in one of the VIs that use it independently, since the propagation is automatic.",
+   "options": {
+    "a": "A change to the value or structure propagates automatically to every VI that uses that typedef, avoiding inconsistencies from manual updates forgotten in some VI",
+    "b": "Type Definitions execute faster than any loose constant",
+    "c": "Loose constants can never be used in LabVIEW",
+    "d": "There is no maintenance difference between the two approaches"
+   }
+  },
+  "274": {
+   "question": "Why is it advisable to avoid extremely long block diagrams, or diagrams with many elements that cannot be seen at once without scrolling?",
+   "explanation": "Large block diagrams are hard to read, understand and debug at a glance; splitting the logic into smaller SubVIs with clear responsibilities substantially improves code maintainability.",
+   "options": {
+    "a": "Because they make the code harder to read, understand and debug; it is preferable to split the logic into smaller, more manageable SubVIs",
+    "b": "Because LabVIEW limits the maximum size of a block diagram to 10 nodes",
+    "c": "Because a long diagram always runs more slowly than a short one",
+    "d": "Because long diagrams cannot be saved in a .vi file"
+   }
+  },
+  "275": {
+   "question": "Which coding practice helps other developers quickly understand the purpose of a complex section of the block diagram without having to analyze each node individually?",
+   "explanation": "Explanatory comments on the block diagram help convey the design intent of a section of code, complementing the visual logic with context that is not always obvious from the wiring alone.",
+   "options": {
+    "a": "Adding comments (free labels) explaining the general intent of that section of code",
+    "b": "Removing all control names to simplify the view",
+    "c": "Using only default colors with no visual organization",
+    "d": "Combining as many functions as possible into a single composite node"
+   }
+  },
+  "276": {
+   "question": "What is recommended regarding error handling when designing a robust application in LabVIEW?",
+   "explanation": "A robust application keeps a consistent error-handling strategy, propagating the error cluster through every relevant VI, rather than ignoring it in places or replacing it with less reliable mechanisms.",
+   "options": {
+    "a": "Propagate and handle the error cluster consistently throughout the whole application, rather than ignoring it in some VIs",
+    "b": "Completely ignore the error cluster to simplify the diagram",
+    "c": "Handle errors only at the very end of the application, without propagating them between intermediate VIs",
+    "d": "Use global variables instead of the error cluster to report problems"
+   }
+  },
+  "277": {
+   "question": "Why is it recommended to avoid 'hidden wires' or unnecessary wire crossings in a well-designed block diagram?",
+   "explanation": "Wires that cross or end up hidden behind other elements make it hard to interpret the dataflow correctly, increasing the risk of mistakes when modifying or debugging the code later.",
+   "options": {
+    "a": "Because they make the real dataflow between nodes hard to follow visually, increasing the chance of misreading the code when reading or modifying it",
+    "b": "Because LabVIEW does not allow VIs with crossed wires to run",
+    "c": "Because crossed wires use more memory at run time",
+    "d": "Because they directly affect the VI's compile speed"
+   }
+  },
+  "278": {
+   "question": "What is recommended for commented-out, unused or 'dead' code left on a block diagram before considering the VI finished?",
+   "explanation": "Unused or 'dead' code should be removed (or clearly documented if kept for some specific reason), since its unnecessary presence makes the block diagram harder to read and maintain.",
+   "options": {
+    "a": "Remove it from the diagram, since unused code makes reading harder and can create confusion about which parts are actually functional",
+    "b": "Always leave it visible, since it might be useful in future without needing any documentation",
+    "c": "Automatically convert it into a hidden SubVI",
+    "d": "Hide it using a permanently disabled Case Structure with no annotation"
+   }
+  },
+  "279": {
+   "question": "A For Loop has its N terminal wired with the value 10 and contains a Shift Register initialized to 0 outside the loop. Inside the loop, on each iteration the value of the 'i' terminal is added to the Shift Register. What final value will the Shift Register hold when the loop ends?",
+   "explanation": "The 'i' terminal takes values from 0 to 9 across the 10 iterations; summing 0+1+2+...+9 = 45, which is the final value accumulated in the Shift Register.",
+   "options": {
+    "a": "45 (the sum of 0+1+2+...+9)",
+    "b": "10",
+    "c": "55",
+    "d": "0"
+   }
+  },
+  "280": {
+   "question": "A While Loop has its conditional terminal configured as 'Stop if True' and wired to the comparison 'i >= 5' (where i is the iteration terminal). How many iterations will run in total, including the iteration in which the condition is met?",
+   "explanation": "The loop keeps running while the stop condition is FALSE and stops AFTER the iteration in which it becomes TRUE; since i reaches 5 on the sixth iteration (counting from i=0), that iteration runs before stopping, for a total of 6 iterations (i=0 to i=5).",
+   "options": {
+    "a": "6 iterations (i = 0,1,2,3,4,5)",
+    "b": "5 iterations (i = 0,1,2,3,4)",
+    "c": "An indefinite number of iterations",
+    "d": "Just 1 iteration"
+   }
+  },
+  "281": {
+   "question": "A VI has a numeric control A and a numeric control B, both wired to the 'Add' function, whose output is wired to an indicator C. If A=3 and B=4 when the VI runs, what value will indicator C show?",
+   "explanation": "The Add function simply adds its two inputs: 3 + 4 = 7, and that value propagates to indicator C.",
+   "options": {
+    "a": "7",
+    "b": "12",
+    "c": "1",
+    "d": "34"
+   }
+  },
+  "282": {
+   "question": "A 5-element numeric array {10, 20, 30, 40, 50} is wired to the Index Array function with the input index wired to the constant 2. What value does the output produce?",
+   "explanation": "Since arrays are indexed from 0, index 2 corresponds to the third element of the array {10, 20, 30, 40, 50}, that is, the value 30.",
+   "options": {
+    "a": "30",
+    "b": "20",
+    "c": "3",
+    "d": "50"
+   }
+  },
+  "283": {
+   "question": "A VI contains a Case Structure with a Boolean selector. In the True case, an indicator is wired to the constant 100. In the False case, the same indicator (the same output tunnel) is wired to the constant 0. The input Boolean control is FALSE when the VI runs. What value will the indicator show?",
+   "explanation": "With the selector FALSE, only the False case of the Case Structure runs, and its output tunnel is wired to the constant 0, so the indicator will show 0.",
+   "options": {
+    "a": "0",
+    "b": "100",
+    "c": "An undefined value, because both cases are defined",
+    "d": "The VI cannot run because both cases are defined"
+   }
+  },
+  "284": {
+   "question": "A While Loop contains a Shift Register initialized to 1 (outside the loop). On each iteration, the Shift Register's value is multiplied by 2 and the result is fed back into the same Shift Register. The loop stops after exactly 4 iterations. What final value will the Shift Register hold?",
+   "explanation": "Starting at 1 and multiplying by 2 on each of the 4 iterations: 1 to 2 to 4 to 8 to 16; the Shift Register's final value after the fourth iteration is 16.",
+   "options": {
+    "a": "16 (1x2x2x2x2)",
+    "b": "8",
+    "c": "4",
+    "d": "32"
+   }
+  },
+  "285": {
+   "question": "An array {5, 3, 8, 1, 9} is wired to the Array Max & Min function. What values do the 'max' and 'max index' outputs produce, respectively?",
+   "explanation": "The maximum value of the array {5, 3, 8, 1, 9} is 9, located at index position 4 (counting from 0: 5=0, 3=1, 8=2, 1=3, 9=4).",
+   "options": {
+    "a": "max = 9, max index = 4",
+    "b": "max = 9, max index = 3",
+    "c": "max = 8, max index = 2",
+    "d": "max = 1, max index = 3"
+   }
+  },
+  "286": {
+   "question": "A VI has a Concatenate Strings function with two inputs: the first wired to the constant 'Hello ' and the second to the constant 'World'. What string does the output produce?",
+   "explanation": "Concatenate Strings joins the inputs in the order they are wired: 'Hello ' followed by 'World' results in 'Hello World'.",
+   "options": {
+    "a": "'Hello World'",
+    "b": "'WorldHello '",
+    "c": "'Hello'",
+    "d": "'World Hello'"
+   }
+  },
+  "287": {
+   "question": "A For Loop with N=3 contains a constant array {1,2,3,4,5} wired to an input tunnel WITHOUT auto-indexing enabled (indexing disabled). What value does the code inside the loop receive on each of the 3 iterations?",
+   "explanation": "With auto-indexing disabled, the input tunnel delivers the complete array as-is, without splitting it, and that same complete array is available on every iteration of the loop.",
+   "options": {
+    "a": "The complete array {1,2,3,4,5}, identical on each of the 3 iterations",
+    "b": "A different element of the array on each iteration: 1, then 2, then 3",
+    "c": "Only the first element (1) on the first iteration and nothing on the rest",
+    "d": "A run-time error, because the array has more elements than N"
+   }
+  },
+  "288": {
+   "question": "A VI has two Boolean controls, A and B, wired to a logical OR function whose output is wired to an indicator C. If A=FALSE and B=FALSE, what value will C show?",
+   "explanation": "The OR function produces TRUE only if at least one of its inputs is TRUE; with both inputs FALSE, the output is FALSE.",
+   "options": {
+    "a": "FALSE",
+    "b": "TRUE",
+    "c": "A data type error",
+    "d": "0 (numeric)"
+   }
+  },
+  "289": {
+   "question": "A Formula Node contains the code: 'y = x * 2 + 1;' where x is an input terminal wired to the value 5, and y is the output terminal. What value will y hold after execution?",
+   "explanation": "Following the formula: y = 5 * 2 + 1 = 10 + 1 = 11, respecting standard operator precedence (multiplication before addition).",
+   "options": {
+    "a": "11",
+    "b": "10",
+    "c": "6",
+    "d": "16"
+   }
+  },
+  "290": {
+   "question": "An array of strings {'red', 'green', 'blue'} is wired to a For Loop with auto-indexing enabled on the input tunnel (with N unwired). Inside the loop, each string is concatenated with the suffix ' light', and the result is wired to an output tunnel with auto-indexing enabled. What array results at the loop output?",
+   "explanation": "The loop runs 3 iterations (one for each element of the auto-indexed input array), concatenating ' light' to each string; the auto-indexed output tunnel accumulates the three results into a new array.",
+   "options": {
+    "a": "{'red light', 'green light', 'blue light'}",
+    "b": "{'red', 'green', 'blue'}",
+    "c": "{'light red', 'light green', 'light blue'}",
+    "d": "A single string: 'red green blue light'"
+   }
+  },
+  "291": {
+   "question": "A VI contains a Case Structure with an integer selector, with cases defined for 1, 2 and Default. Case 1 adds 10 to the input value, case 2 multiplies it by 10, and the Default case leaves it unchanged. If the selector receives the value 3 and the numeric input is 7, what value does the output produce?",
+   "explanation": "Since there is no explicit case for the value 3, the Default case runs, leaving the input value unchanged; therefore the output is 7.",
+   "options": {
+    "a": "7 (unchanged, running the Default case)",
+    "b": "17 (running case 1)",
+    "c": "70 (running case 2)",
+    "d": "3 (the selector value)"
+   }
+  },
+  "292": {
+   "question": "A cluster contains, in this order: a string 'name', a numeric 'age' and a Boolean 'active'. The positional Unbundle function (not by name) is used on this cluster. In what order do the Unbundle function's outputs appear?",
+   "explanation": "Positional Unbundle strictly respects the internal order in which the elements were added to the cluster; in this case, first the string, then the numeric, and finally the Boolean.",
+   "options": {
+    "a": "String 'name', then numeric 'age', then Boolean 'active', in that same order",
+    "b": "Always alphabetically by element name, regardless of internal order",
+    "c": "Always the Boolean first, regardless of the cluster's internal order",
+    "d": "The order is random on each run"
+   }
+  },
+  "293": {
+   "question": "A While Loop has a Shift Register initialized to 0. On each iteration, the Shift Register's current value is compared with 100 using '>='; if true, it is wired to the conditional terminal ('Stop if True'). Inside the loop, 30 is added to the Shift Register on each iteration before feeding it back. How many iterations run before the loop stops?",
+   "explanation": "The Shift Register advances as follows: iteration 1: 0+30=30; iteration 2: 30+30=60; iteration 3: 60+30=90; iteration 4: 90+30=120, at which point 120>=100 is TRUE and the loop stops after completing that fourth iteration.",
+   "options": {
+    "a": "4 iterations (0 to 30 to 60 to 90 to 120, stopping when 120>=100)",
+    "b": "3 iterations",
+    "c": "10 iterations",
+    "d": "The loop never stops"
+   }
+  },
+  "294": {
+   "question": "A VI has the 'Not' function wired to a Boolean control that is TRUE. The output of 'Not' is wired to an indicator. What value will the indicator show?",
+   "explanation": "The logical Not function inverts the incoming Boolean value; if the input is TRUE, the output will be FALSE.",
+   "options": {
+    "a": "FALSE",
+    "b": "TRUE",
+    "c": "0",
+    "d": "A data type error"
+   }
+  },
+  "295": {
+   "question": "An array {2, 4, 6, 8} is wired to the Array Size function, whose output is wired to the Add function together with the constant 1. What final value does the Add output produce?",
+   "explanation": "Array Size returns 4 (the number of elements in the array); adding 1 with the Add function gives a final result of 5.",
+   "options": {
+    "a": "5 (4 elements + 1)",
+    "b": "4",
+    "c": "8",
+    "d": "9"
+   }
+  },
+  "296": {
+   "question": "A VI contains two parallel For Loops (with no data dependency between them). The first, with N=3, produces on an auto-indexed output tunnel an array with the 'i' terminal values from each iteration. The second, with N=2, does the same. Both resulting arrays are wired to the Build Array function (concatenate mode, not nest). What array results in the end?",
+   "explanation": "The first For Loop (N=3) produces {0,1,2}, and the second (N=2) produces {0,1}; using Build Array in concatenate mode, both arrays are joined in sequence into a single 1D array: {0,1,2,0,1}.",
+   "options": {
+    "a": "{0, 1, 2, 0, 1}",
+    "b": "{0, 1, 2, 3, 4}",
+    "c": "{{0,1,2}, {0,1}}",
+    "d": "An error, because the arrays have different sizes"
+   }
+  },
+  "297": {
+   "question": "A VI has a string control with the value 'LabVIEW' wired to the String Length function. What numeric value does the output produce?",
+   "explanation": "The string 'LabVIEW' has exactly 7 characters (L-a-b-V-I-E-W), so String Length returns the integer 7.",
+   "options": {
+    "a": "7",
+    "b": "6",
+    "c": "8",
+    "d": "7.0 with decimals"
+   }
+  },
+  "298": {
+   "question": "A VI has a non-reentrant SubVI that increments an internally stored value by 1 using a Shift Register or Feedback Node that persists between calls, and returns that value as an output. If the main VI calls this SubVI three times sequentially (one after another) inside a single For Loop of 3 iterations, starting the internal counter at 0, what sequence of values is obtained across the three calls?",
+   "explanation": "Being a non-reentrant SubVI with state persisting between calls through a Feedback Node, each call increments the value stored from the previous call: starting at 0, the first call returns 1, the second 2 and the third 3.",
+   "options": {
+    "a": "1, 2, 3",
+    "b": "1, 1, 1",
+    "c": "0, 1, 2",
+    "d": "3, 3, 3"
+   }
+  },
+  "299": {
+   "question": "A two-dimensional (2D) array of 2 rows by 3 columns, with values {{1,2,3},{4,5,6}}, is wired to Index Array configured to extract only the row at index 1. What result does the output produce?",
+   "explanation": "Indexing by row (index 1, the second row counting from 0) of the 2D array {{1,2,3},{4,5,6}} yields the complete row {4, 5, 6}.",
+   "options": {
+    "a": "{4, 5, 6}",
+    "b": "{1, 2, 3}",
+    "c": "6",
+    "d": "{1, 4}"
+   }
+  },
+  "300": {
+   "question": "A VI has a numeric control A=15 and a constant 4, both wired to the 'Quotient & Remainder' function (integer division quotient and remainder). What values does this function produce at its two outputs?",
+   "explanation": "Quotient & Remainder performs integer division: 15 divided by 4 gives a quotient of 3 (since 3x4=12) and a remainder of 3 (15-12=3).",
+   "options": {
+    "a": "Quotient = 3, Remainder = 3",
+    "b": "Quotient = 4, Remainder = 0",
+    "c": "Quotient = 3, Remainder = 0",
+    "d": "Quotient = 15, Remainder = 4"
+   }
+  }
+ }
+}
