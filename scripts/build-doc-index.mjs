@@ -244,10 +244,14 @@ function chunkPage(page, targetChars = 700, minChars = 140) {
  * Shared with the runtime searcher (src/lib/search/tokenize.ts). Kept in sync
  * deliberately: the index and the query must tokenise identically.
  */
+// NOTE: 'vi' is deliberately NOT a stopword. It reads as a Roman numeral in
+// the guides' front matter, but in LabVIEW "VI" (Virtual Instrument) is core
+// domain vocabulary — excluding it silently crippled retrieval for a large
+// share of the bank.
 const STOPWORDS = new Set(
   ('a an the of to in on for with and or is are be as at by from that this these those it its you your ' +
     'can will use used using when if then than each into over under more most other such no not only own ' +
-    'same so also new i ii iii iv v vi you have has had do does did but they them their there here what ' +
+    'same so also new i ii iii iv you have has had do does did but they them their there here what ' +
     'which who whom how why all any both few nor too very s t just should now')
     .split(/\s+/),
 );
