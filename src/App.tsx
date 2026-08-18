@@ -206,6 +206,19 @@ export default function App() {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   }, []);
 
+  /**
+   * Relative navigation, resolved against the latest state rather than the
+   * index captured when the button rendered. Selecting an answer and advancing
+   * are two separate state updates; if the second one read a stale index it
+   * would land back on a question already answered.
+   */
+  const handleStep = useCallback((delta: number) => {
+    setSession((current) =>
+      current ? goToQuestion(current, current.currentIndex + delta) : current,
+    );
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }, []);
+
   const retryIncorrect = useCallback(() => {
     if (!results || !bank) return;
     const ids = new Set(results.results.filter((r) => !r.isCorrect).map((r) => r.questionId));
@@ -345,6 +358,7 @@ export default function App() {
             t={t}
             onSelect={handleSelect}
             onNavigate={handleNavigate}
+            onStep={handleStep}
             onFinish={() => void finishQuiz(session)}
             onExit={() => setExitPrompt(true)}
           />

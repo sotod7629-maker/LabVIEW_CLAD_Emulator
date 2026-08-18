@@ -21,13 +21,22 @@ export function QuizView({
   t,
   onSelect,
   onNavigate,
+  onStep,
   onFinish,
   onExit,
 }: {
   session: QuizSession;
   t: Translator;
   onSelect: (questionId: number, optionId: OptionKey | null) => void;
+  /** Jump to an absolute index (question map). */
   onNavigate: (index: number) => void;
+  /**
+   * Move relative to whatever the CURRENT index is. Previous/Next must not
+   * compute their target from the rendered index: a fast click can be handled
+   * before React commits the preceding state update, and the stale index would
+   * navigate back to a question already visited.
+   */
+  onStep: (delta: number) => void;
   onFinish: () => void;
   onExit: () => void;
 }) {
@@ -199,7 +208,7 @@ export function QuizView({
           type="button"
           className="btn btn--secondary"
           disabled={session.currentIndex === 0}
-          onClick={() => onNavigate(session.currentIndex - 1)}
+          onClick={() => onStep(-1)}
         >
           ← {t('quiz.previous')}
         </button>
@@ -216,7 +225,7 @@ export function QuizView({
           <button
             type="button"
             className="btn btn--primary"
-            onClick={() => onNavigate(session.currentIndex + 1)}
+            onClick={() => onStep(1)}
           >
             {t('quiz.next')} →
           </button>
